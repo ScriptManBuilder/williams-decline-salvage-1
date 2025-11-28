@@ -1,0 +1,226 @@
+import React, { useState } from 'react';
+import {
+  SupportContainer,
+  SupportHero,
+  HeroContent,
+  HeroTitle,
+  HeroDescription,
+  HeroImageWrapper,
+  HeroImage,
+  ContactInfo,
+  PhoneNumber,
+  PhoneIcon,
+  AvailabilityText,
+  ActionButtons,
+  ActionButton,
+  HelpSection,
+  HelpTitle,
+  HelpGrid,
+  HelpCard,
+  HelpIcon,
+  HelpCardTitle,
+  HelpCardDescription,
+  FAQSection,
+  FAQSectionTitle,
+  FAQSectionDescription,
+  FAQList,
+  FAQItem,
+  FAQQuestion,
+  FAQAnswer,
+  FAQIcon
+} from '../styles/SupportPage.styles';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+const SupportPage: React.FC = () => {
+  const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: 'Why was my payment declined?',
+      answer: 'Payment declines can happen for several reasons: expired card, insufficient funds, incorrect billing information, or temporary bank issues. Do not worry - this is very common and usually easy to fix. Contact us and we will help you update your payment information to complete your direct mail order.'
+    },
+    {
+      question: 'How do I update my payment information?',
+      answer: 'You can update your payment information by clicking the secure link in the email we sent you, or by contacting our support team directly. We will guide you through a safe and secure process. Your payment information is protected with bank-grade encryption.'
+    },
+    {
+      question: 'How long does it take to process my payment?',
+      answer: 'Once you update your payment information, we process it immediately. You will receive a confirmation email within minutes. Your direct mail order will then proceed to fulfillment and shipping.'
+    },
+    {
+      question: 'How can I contact customer support?',
+      answer: 'You can reach us by phone during business hours (Monday-Friday, 9 AM - 6 PM EST), by email anytime, or through the contact form on this website. We are here to help you complete your direct mail purchase.'
+    },
+    {
+      question: 'Is this website legitimate?',
+      answer: 'Yes! We work directly with the company you placed your direct mail order with. You can verify this by checking the email sender, calling the merchant directly, or contacting us at the phone number listed on this website. Your security is our top priority.'
+    },
+    {
+      question: 'What if I want to cancel my order?',
+      answer: 'That is completely fine! You are under no obligation to complete your purchase. If you have changed your mind about your direct mail order, simply contact us and we will cancel it. You can also review our refund policy for more information.'
+    }
+  ];
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQIndex(openFAQIndex === index ? null : index);
+  };
+
+  const helpTopics = [
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+      ),
+      title: 'Payment Issues',
+      description: 'Help with declined payments, updating payment information, and completing your direct mail order'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+        </svg>
+      ),
+      title: 'Order Questions',
+      description: 'Questions about your direct mail order status, delivery, and purchase details'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+        </svg>
+      ),
+      title: 'Order Tracking',
+      description: 'Track your direct mail order and get updates on delivery status'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+        </svg>
+      ),
+      title: 'Payment Methods',
+      description: 'Information about accepted payment methods and how to update your payment details'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+        </svg>
+      ),
+      title: 'Refunds & Returns',
+      description: 'Questions about refund policy, returns, and cancellations for your direct mail purchase'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+        </svg>
+      ),
+      title: 'Security & Privacy',
+      description: 'Information about how we protect your payment information and personal data'
+    }
+  ];
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:support@joinserenity.ai';
+  };
+
+  const handleContactClick = () => {
+    window.location.href = '/#contact';
+  };
+
+  return (
+    <>
+      <Header />
+      <SupportContainer>
+        <SupportHero>
+          <div>
+            <HeroImageWrapper>
+              <HeroImage src="/heroSupport3.png" alt="Customer Support" />
+            </HeroImageWrapper>
+            
+            <HeroContent>
+              <HeroTitle>Need Help with Your Payment?</HeroTitle>
+              <HeroDescription>We serve only direct mail clients. Payment declined? We are here to help you complete your order.</HeroDescription>
+            
+              <ContactInfo>
+                <PhoneIcon>
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </PhoneIcon>
+                <div>
+                  <PhoneNumber>{process.env.REACT_APP_PHONE_DISPLAY}</PhoneNumber>
+                  <AvailabilityText>Available Monday - Friday, 9 AM - 6 PM EST</AvailabilityText>
+                </div>
+              </ContactInfo>
+            
+              <ActionButtons>
+                <ActionButton onClick={handleContactClick}>
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                  </svg>
+                  Get Help
+                </ActionButton>
+              </ActionButtons>
+            </HeroContent>
+          </div>
+        </SupportHero>
+        
+        <HelpSection>
+          <HelpTitle>How Can We Help You Today?</HelpTitle>
+          <HelpGrid>
+            {helpTopics.map((topic, index) => (
+              <HelpCard key={index} onClick={handleContactClick} style={{ cursor: 'pointer' }}>
+                <HelpIcon>{topic.icon}</HelpIcon>
+                <HelpCardTitle>{topic.title}</HelpCardTitle>
+                <HelpCardDescription>{topic.description}</HelpCardDescription>
+              </HelpCard>
+            ))}
+          </HelpGrid>
+        </HelpSection>
+
+        <FAQSection>
+          <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
+          <FAQSectionDescription>Quick answers to common support questions</FAQSectionDescription>
+          <FAQList>
+            {faqs.map((faq, index) => (
+              <FAQItem key={index}>
+                <FAQQuestion onClick={() => toggleFAQ(index)} $isOpen={openFAQIndex === index}>
+                  <span>{faq.question}</span>
+                  <FAQIcon $isOpen={openFAQIndex === index}>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                  </FAQIcon>
+                </FAQQuestion>
+                {openFAQIndex === index && (
+                  <FAQAnswer>
+                    {faq.answer}
+                    <div style={{ marginTop: '1rem' }}>
+                      <ActionButton 
+                        onClick={handleContactClick} 
+                        style={{ 
+                          fontSize: '0.9rem', 
+                          padding: '0.6rem 1.25rem',
+                          display: 'inline-flex'
+                        }}
+                      >
+                        Contact Support
+                      </ActionButton>
+                    </div>
+                  </FAQAnswer>
+                )}
+              </FAQItem>
+            ))}
+          </FAQList>
+        </FAQSection>
+      </SupportContainer>
+      <Footer />
+    </>
+  );
+};
+
+export default SupportPage;
