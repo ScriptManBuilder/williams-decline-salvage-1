@@ -138,7 +138,7 @@ const SupportPage: React.FC = () => {
         <SupportHero>
           <div>
             <HeroImageWrapper>
-              <HeroImage src="/heroSupport3.png" alt="Customer Support" />
+              <HeroImage src="/heroSupport3.jpg" alt="Customer Support" />
             </HeroImageWrapper>
             
             <HeroContent>

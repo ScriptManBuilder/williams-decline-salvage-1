@@ -142,11 +142,17 @@ const ContactSection: React.FC = () => {
             ))}
             
             <InfoCard style={{ marginTop: '2rem' }}>
+              <InfoTitle>Contact Information</InfoTitle>
               <InfoDescription>
-                Or reach us directly at <span style={{ fontWeight: 600, userSelect: 'none', pointerEvents: 'none' }}>{process.env.REACT_APP_EMAIL_SUPPORT}</span>
+                <strong>Email Support:</strong>
                 <br />
+                <span style={{ fontWeight: 600, userSelect: 'none', pointerEvents: 'none' }}>
+                  {process.env.REACT_APP_EMAIL_SUPPORT}
+                </span>
+              </InfoDescription>
+              <InfoDescription style={{ marginTop: '1rem' }}>
+                <strong>Customer Service:</strong>
                 <br />
-                or call 
                 <InfoLink href={`tel:${process.env.REACT_APP_PHONE_NUMBER?.replace(/\s+/g, '')}`}>
                   {process.env.REACT_APP_PHONE_DISPLAY}
                 </InfoLink>
