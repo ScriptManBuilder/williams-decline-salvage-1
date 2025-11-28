@@ -26,46 +26,44 @@ const EndUserTermsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>1. Acceptance of Terms</LegalSectionTitle>
             <LegalParagraph>
-              These End-User Terms of Service ("End-User Terms") govern your use of services provided by 
-              {process.env.REACT_APP_COMPANY_NAME} when you interact with our payment recovery platform as an end-user 
-              or customer of our merchant clients.
+              We serve only direct mail clients. These End-User Terms of Service ("End-User Terms") govern your use of services provided by 
+              {process.env.REACT_APP_COMPANY_NAME} when you make a purchase through our direct mail offers.
             </LegalParagraph>
             <LegalParagraph>
-              By completing a transaction, making a payment, or interacting with our payment recovery communications, 
+              By completing a transaction, making a payment, or using our customer assistance services, 
               you acknowledge that you have read, understood, and agree to be bound by these End-User Terms.
             </LegalParagraph>
             <LegalParagraph>
-              If you do not agree to these terms, please do not use our services or respond to our communications.
+              If you do not agree to these terms, please do not complete your purchase or use our services.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
             <LegalSectionTitle>2. Service Description</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} provides payment recovery services on behalf of merchant clients. 
+              {process.env.REACT_APP_COMPANY_NAME} provides customer payment assistance services for direct mail purchases. 
               Our services include:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Payment Retry Services:</strong> Automated retry of declined payment transactions using updated 
-                payment information
+                <strong>Payment Processing:</strong> Secure processing of payments for products ordered through direct mail
               </LegalListItem>
               <LegalListItem>
-                <strong>Payment Reminders:</strong> Email and SMS notifications reminding you of pending or failed payments
+                <strong>Payment Assistance:</strong> Help with updating payment information when cards are declined
               </LegalListItem>
               <LegalListItem>
-                <strong>Account Recovery Links:</strong> Secure links allowing you to update payment information or complete purchases
+                <strong>Order Support:</strong> Assistance with completing your order and tracking delivery
               </LegalListItem>
               <LegalListItem>
-                <strong>Customer Support:</strong> Assistance with payment issues, account questions, and transaction inquiries
+                <strong>Customer Service:</strong> Support for questions about your direct mail order
               </LegalListItem>
               <LegalListItem>
-                <strong>Secure Payment Processing:</strong> PCI-compliant payment processing infrastructure
+                <strong>Secure Communications:</strong> Email and phone support for payment-related inquiries
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              We act as a service provider to merchants and process payments on their behalf. The underlying transaction 
-              is between you and the merchant.
+              We process payments for products you ordered via direct mail. The products and services are provided 
+              by the merchant whose offer you responded to.
             </LegalParagraph>
           </LegalSection>
 

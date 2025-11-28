@@ -17,8 +17,9 @@ import CCPANoticePage from './pages/CCPANoticePage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import RefundPage from './pages/RefundPage';
-import DigitalProductsPage from './pages/DigitalProductsPage';
 import DataProcessingPage from './pages/DataProcessingPage';
+import CompanyInfoPage from './pages/CompanyInfoPage';
+import DigitalProductsPage from './pages/DigitalProductsPage';
 import EndUserTermsPage from './pages/EndUserTermsPage';
 import MerchantDisclosurePage from './pages/MerchantDisclosurePage';
 
@@ -70,8 +71,9 @@ function App() {
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/refund" element={<RefundPage />} />
-        <Route path="/digital-products" element={<DigitalProductsPage />} />
         <Route path="/data-processing" element={<DataProcessingPage />} />
+        <Route path="/company-info" element={<CompanyInfoPage />} />
+        <Route path="/digital-products" element={<DigitalProductsPage />} />
         <Route path="/end-user-terms" element={<EndUserTermsPage />} />
         <Route path="/merchant-disclosure" element={<MerchantDisclosurePage />} />
       </Routes>

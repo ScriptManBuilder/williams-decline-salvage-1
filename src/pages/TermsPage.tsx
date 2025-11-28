@@ -28,7 +28,7 @@ const TermsPage: React.FC = () => {
             <LegalParagraph>
               These Terms and Conditions ("Terms") constitute a legally binding agreement between you and {process.env.REACT_APP_COMPANY_NAME} 
               ("Company," "we," "us," or "our") concerning your access to and use of our services, including our website and 
-              payment recovery solutions.
+              customer payment assistance services.
             </LegalParagraph>
             <LegalParagraph>
               By accessing or using our services, you agree that you have read, understood, and agree to be bound by these Terms. 
@@ -39,15 +39,15 @@ const TermsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Services Description</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} provides payment recovery and revenue optimization services designed to help 
-              businesses recover failed transactions and reduce payment abandonment. Our services include:
+              {process.env.REACT_APP_COMPANY_NAME} provides customer payment assistance services designed to help 
+              customers complete their purchases when payment issues occur. Our services include:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Automated payment retry logic and failed transaction recovery</LegalListItem>
-              <LegalListItem>Customer communication and payment reminder systems</LegalListItem>
-              <LegalListItem>Analytics and reporting on payment performance</LegalListItem>
-              <LegalListItem>Integration with e-commerce platforms and payment processors</LegalListItem>
-              <LegalListItem>Consultation and support services</LegalListItem>
+              <LegalListItem>Secure payment method update assistance</LegalListItem>
+              <LegalListItem>Customer support for declined payment issues</LegalListItem>
+              <LegalListItem>Payment troubleshooting and resolution guidance</LegalListItem>
+              <LegalListItem>Secure communication about payment status</LegalListItem>
+              <LegalListItem>Customer service and support for direct mail orders</LegalListItem>
             </LegalList>
           </LegalSection>
 
@@ -72,15 +72,15 @@ const TermsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Payment Terms</LegalSectionTitle>
             <LegalParagraph>
-              Our services are provided on a subscription or commission basis, as detailed in your service agreement. 
-              Payment terms include:
+              When you use our services to update your payment information and complete your purchase, 
+              the following terms apply:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Fees are charged according to your selected plan or agreement</LegalListItem>
-              <LegalListItem>Payments are processed through secure third-party payment processors</LegalListItem>
-              <LegalListItem>Subscription fees are billed in advance on a recurring basis</LegalListItem>
-              <LegalListItem>Commission-based fees are calculated based on successfully recovered transactions</LegalListItem>
-              <LegalListItem>All fees are non-refundable except as required by law or stated in our Refund Policy</LegalListItem>
+              <LegalListItem>Payments are for the original products or services you ordered via direct mail</LegalListItem>
+              <LegalListItem>All payments are processed through secure third-party payment processors</LegalListItem>
+              <LegalListItem>Payment amounts match the terms stated in your original direct mail offer</LegalListItem>
+              <LegalListItem>You will receive a confirmation email after successful payment processing</LegalListItem>
+              <LegalListItem>Refund terms are governed by our Refund Policy and the original merchant terms</LegalListItem>
             </LegalList>
           </LegalSection>
 

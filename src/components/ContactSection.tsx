@@ -121,7 +121,7 @@ const ContactSection: React.FC = () => {
               <FormLabel>Message</FormLabel>
               <FormTextarea 
                 name="message"
-                placeholder="Tell us about your business and payment recovery needs..." 
+                placeholder="Tell us about your order or how we can help you..." 
                 rows={5}
                 required 
                 disabled={isSubmitting}

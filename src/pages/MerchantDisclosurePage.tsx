@@ -19,16 +19,16 @@ const MerchantDisclosurePage: React.FC = () => {
       <Header />
       <LegalPageContainer>
         <LegalHeroSection>
-          <LegalTitle>Merchant Disclosure</LegalTitle>
+          <LegalTitle>Payment Disclosure</LegalTitle>
         </LegalHeroSection>
 
         <LegalContent>
           <LegalSection>
-            <LegalSectionTitle>Merchant Information</LegalSectionTitle>
+            <LegalSectionTitle>Important Payment Information</LegalSectionTitle>
             <LegalParagraph>
-              This disclosure provides important information about {process.env.REACT_APP_COMPANY_NAME}, the merchant 
-              providing payment recovery services. This information is provided in compliance with consumer protection 
-              laws and payment card industry regulations.
+              We serve only direct mail clients. This disclosure provides important information about {process.env.REACT_APP_COMPANY_NAME}, 
+              the company processing payments for your direct mail purchase. This information is provided in compliance with consumer 
+              protection laws and payment card industry regulations.
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
               Legal Business Name:
@@ -63,49 +63,46 @@ const MerchantDisclosurePage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Nature of Business</LegalSectionTitle>
+            <LegalSectionTitle>Our Services</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} is a payment recovery service provider that operates on behalf of 
-              e-commerce merchants and online businesses. Our services include:
+              {process.env.REACT_APP_COMPANY_NAME} provides customer payment assistance services for direct mail purchases. 
+              Our services include:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>
-                <strong>Failed Payment Recovery:</strong> Automated retry and recovery of declined or failed payment transactions
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Customer Communication:</strong> Email and SMS notifications to customers regarding payment issues
-              </LegalListItem>
               <LegalListItem>
                 <strong>Payment Processing:</strong> Secure processing of credit card, debit card, and other payment methods
               </LegalListItem>
               <LegalListItem>
-                <strong>Account Management:</strong> Tools for customers to update payment information and manage subscriptions
+                <strong>Payment Assistance:</strong> Help with updating payment information when your card is declined
               </LegalListItem>
               <LegalListItem>
-                <strong>Analytics and Reporting:</strong> Data insights for merchants regarding payment recovery performance
+                <strong>Order Support:</strong> Assistance with completing your direct mail order
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Customer Service:</strong> Support for questions about your purchase and payment
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Secure Communications:</strong> Email and phone support for payment-related inquiries
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              We act as a payment service provider and merchant of record for transactions processed through our platform. 
-              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we serve e-commerce businesses across various industries.
+              We process payments on behalf of the merchant whose direct mail offer you responded to. 
+              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we serve direct mail customers across the United States.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Billing Descriptor</LegalSectionTitle>
+            <LegalSectionTitle>How Charges Appear on Your Statement</LegalSectionTitle>
             <LegalParagraph>
-              When you make a payment through our platform, the following descriptors may appear on your credit card or 
+              When you make a payment for your direct mail order, the following may appear on your credit card or 
               bank statement:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Primary Descriptor:</strong> "WILLIAMS COLLECTION" or "WMS*[Merchant Name]"
+                <strong>Billing Descriptor:</strong> "WILLIAMS COLLECTION" or similar variation
               </LegalListItem>
               <LegalListItem>
-                <strong>Alternative Descriptors:</strong> May include the merchant's business name followed by our company name
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Phone Number:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear on your statement for customer service inquiries
+                <strong>Contact Phone:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear on your statement for questions
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>

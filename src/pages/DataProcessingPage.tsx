@@ -27,7 +27,7 @@ const DataProcessingPage: React.FC = () => {
             <LegalSectionTitle>1. Definitions and Interpretation</LegalSectionTitle>
             <LegalParagraph>
               This Data Processing Agreement ("DPA") forms part of the service agreement between you ("Data Controller") 
-              and {process.env.REACT_APP_COMPANY_NAME} ("Data Processor") for the provision of payment recovery services.
+              and {process.env.REACT_APP_COMPANY_NAME} ("Data Processor") for the provision of customer payment assistance services.
             </LegalParagraph>
             <LegalParagraph>
               For the purposes of this DPA:
@@ -59,9 +59,9 @@ const DataProcessingPage: React.FC = () => {
               The Data Processor shall process Personal Data only for the following purposes:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Providing payment recovery services as described in the service agreement</LegalListItem>
-              <LegalListItem>Analyzing transaction data to identify recovery opportunities</LegalListItem>
-              <LegalListItem>Communicating with customers regarding payment recovery</LegalListItem>
+              <LegalListItem>Providing customer payment assistance services as described in the service agreement</LegalListItem>
+              <LegalListItem>Analyzing transaction data to assist with payment completion</LegalListItem>
+              <LegalListItem>Communicating with customers regarding payment assistance</LegalListItem>
               <LegalListItem>Processing payments and managing financial transactions</LegalListItem>
               <LegalListItem>Providing customer support and technical assistance</LegalListItem>
               <LegalListItem>Generating reports and analytics for the Data Controller</LegalListItem>

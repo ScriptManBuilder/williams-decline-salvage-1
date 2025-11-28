@@ -26,8 +26,8 @@ const RefundPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Our Commitment to Customer Satisfaction</LegalSectionTitle>
             <LegalParagraph>
-              At {process.env.REACT_APP_COMPANY_NAME}, we are committed to providing high-quality payment recovery services. 
-              This Refund Policy outlines the circumstances under which refunds may be issued and the process for requesting a refund.
+              At {process.env.REACT_APP_COMPANY_NAME}, we are committed to providing excellent customer service. 
+              This Refund Policy outlines the circumstances under which refunds may be issued for purchases made through our direct mail service and the process for requesting a refund.
             </LegalParagraph>
             <LegalParagraph>
               By using our services, you acknowledge that you have read and understood this Refund Policy and agree to be bound by its terms.
@@ -35,47 +35,26 @@ const RefundPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Subscription Services</LegalSectionTitle>
+            <LegalSectionTitle>General Refund Policy</LegalSectionTitle>
             <LegalParagraph>
-              For subscription-based services, the following refund terms apply:
+              For purchases made through our direct mail service, the following refund terms apply:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Free Trial Period:</strong> If you cancel during your free trial period, no charges will be applied. 
-                You must cancel before the trial ends to avoid being charged.
+                <strong>Order Cancellation:</strong> You may cancel your order within 24 hours of purchase for a full refund 
+                if the product has not yet shipped.
               </LegalListItem>
               <LegalListItem>
-                <strong>Monthly Subscriptions:</strong> Monthly subscription fees are non-refundable once paid. You may cancel 
-                your subscription at any time, and cancellation will take effect at the end of your current billing period.
+                <strong>Product Returns:</strong> Physical products may be returned within 30 days of delivery for a full refund, 
+                provided they are in original, unopened condition.
               </LegalListItem>
               <LegalListItem>
-                <strong>Annual Subscriptions:</strong> Annual subscription fees may be eligible for a prorated refund if canceled 
-                within the first 30 days. After 30 days, annual fees are non-refundable.
+                <strong>Digital Products:</strong> Digital products and services are generally non-refundable once accessed 
+                or downloaded, unless required by law.
               </LegalListItem>
               <LegalListItem>
-                <strong>Mid-Cycle Cancellations:</strong> If you cancel mid-cycle, you will retain access to the service until 
-                the end of your current billing period. No refunds are provided for unused time.
-              </LegalListItem>
-            </LegalList>
-          </LegalSection>
-
-          <LegalSection>
-            <LegalSectionTitle>Commission-Based Services</LegalSectionTitle>
-            <LegalParagraph>
-              For commission-based payment recovery services:
-            </LegalParagraph>
-            <LegalList>
-              <LegalListItem>
-                <strong>Performance-Based Fees:</strong> Commission fees are charged only on successfully recovered transactions. 
-                No refunds are provided for commission fees on completed recoveries.
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Setup Fees:</strong> One-time setup or onboarding fees are non-refundable once services have been 
-                activated and integration has been completed.
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Disputed Transactions:</strong> If a recovered transaction is later disputed or reversed, we will 
-                work with you to resolve the issue, but commission fees are generally non-refundable.
+                <strong>Damaged or Defective Items:</strong> If you receive a damaged or defective product, contact us within 
+                7 days for a replacement or full refund.
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -87,15 +66,15 @@ const RefundPage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Service Outage:</strong> If our services are unavailable for more than 48 consecutive hours due to 
-                technical issues on our end, you may be eligible for a prorated refund or service credit.
+                <strong>Non-Delivery:</strong> If your order was not delivered within the stated timeframe and cannot be located, 
+                you may be eligible for a full refund.
               </LegalListItem>
               <LegalListItem>
                 <strong>Billing Errors:</strong> If you were charged incorrectly due to a system error, we will refund the 
                 incorrect amount immediately upon verification.
               </LegalListItem>
               <LegalListItem>
-                <strong>Duplicate Charges:</strong> If you were accidentally charged twice for the same service, we will 
+                <strong>Duplicate Charges:</strong> If you were accidentally charged twice for the same order, we will 
                 refund the duplicate charge.
               </LegalListItem>
               <LegalListItem>
@@ -103,8 +82,8 @@ const RefundPage: React.FC = () => {
                 we will investigate and issue a refund if warranted.
               </LegalListItem>
               <LegalListItem>
-                <strong>Service Not Delivered:</strong> If you paid for services that were never activated or delivered due 
-                to our fault, you are eligible for a full refund.
+                <strong>Product Not as Described:</strong> If the product you received significantly differs from the 
+                description in your direct mail offer, you may be eligible for a refund or replacement.
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -115,13 +94,13 @@ const RefundPage: React.FC = () => {
               The following are not eligible for refunds under any circumstances:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Completed payment recovery services and successfully recovered transactions</LegalListItem>
-              <LegalListItem>Custom integration or development work that has been completed</LegalListItem>
-              <LegalListItem>Consultation services that have been delivered</LegalListItem>
-              <LegalListItem>Access to historical data, reports, or analytics</LegalListItem>
-              <LegalListItem>Third-party services or fees (payment processor fees, gateway fees, etc.)</LegalListItem>
-              <LegalListItem>Services terminated due to violation of our Terms of Service</LegalListItem>
-              <LegalListItem>Subscription fees for periods already consumed</LegalListItem>
+              <LegalListItem>Digital products that have been accessed, downloaded, or used</LegalListItem>
+              <LegalListItem>Products returned after 30 days from delivery date</LegalListItem>
+              <LegalListItem>Products that are not in original, unopened condition (unless defective)</LegalListItem>
+              <LegalListItem>Custom or personalized products made specifically for you</LegalListItem>
+              <LegalListItem>Products marked as final sale or clearance items</LegalListItem>
+              <LegalListItem>Gift cards or promotional codes once redeemed</LegalListItem>
+              <LegalListItem>Shipping and handling fees (unless order was not delivered)</LegalListItem>
             </LegalList>
           </LegalSection>
 
@@ -170,12 +149,12 @@ const RefundPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Service Credits</LegalSectionTitle>
+            <LegalSectionTitle>Store Credits</LegalSectionTitle>
             <LegalParagraph>
-              In some cases, we may offer service credits as an alternative to refunds:
+              In some cases, we may offer store credits as an alternative to refunds:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Service credits can be applied to future subscription periods or services</LegalListItem>
+              <LegalListItem>Store credits can be applied to future purchases</LegalListItem>
               <LegalListItem>Credits are valid for 12 months from the date of issuance</LegalListItem>
               <LegalListItem>Credits are non-transferable and cannot be redeemed for cash</LegalListItem>
               <LegalListItem>Unused credits expire and cannot be refunded</LegalListItem>
@@ -196,16 +175,16 @@ const RefundPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Cancellation Policy</LegalSectionTitle>
+            <LegalSectionTitle>Order Cancellation Policy</LegalSectionTitle>
             <LegalParagraph>
-              You may cancel your subscription at any time:
+              You may cancel your order in the following circumstances:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Cancellations can be processed through your account dashboard or by contacting support</LegalListItem>
-              <LegalListItem>Cancellations take effect at the end of your current billing period</LegalListItem>
-              <LegalListItem>You will continue to have access to services until the end of the paid period</LegalListItem>
-              <LegalListItem>No refunds are provided for the remainder of the current billing period</LegalListItem>
-              <LegalListItem>After cancellation, your data will be retained according to our Privacy Policy</LegalListItem>
+              <LegalListItem>Orders can be cancelled within 24 hours of purchase for a full refund</LegalListItem>
+              <LegalListItem>Once an order has shipped, it cannot be cancelled but may be returned per our return policy</LegalListItem>
+              <LegalListItem>To cancel an order, contact customer support immediately</LegalListItem>
+              <LegalListItem>Refunds for cancelled orders are processed within 5-10 business days</LegalListItem>
+              <LegalListItem>You will receive a cancellation confirmation email once processed</LegalListItem>
             </LegalList>
           </LegalSection>
 

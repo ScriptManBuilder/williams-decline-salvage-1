@@ -12,7 +12,7 @@ import {
 } from '../styles/HeroSection.styles';
 
 const HeroSection: React.FC = () => {
-  const appSubdomain = process.env.REACT_APP_APP_SUBDOMAIN || 'app.williamsrevenuerecovery.com';
+  const appSubdomain = process.env.REACT_APP_APP_SUBDOMAIN || 'app.williamscollection.com';
 
   const handleLaunchApp = () => {
     // Temporarily disabled - demo site under construction

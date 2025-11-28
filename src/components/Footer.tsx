@@ -89,6 +89,12 @@ const Footer: React.FC = () => {
                 <FooterLink href="/digital-products">Digital Products Policy</FooterLink>
               </LinkItem>
               <LinkItem>
+                <FooterLink href="/company-info">Company Information</FooterLink>
+              </LinkItem>
+              <LinkItem>
+                <FooterLink href="/support">Customer Support</FooterLink>
+              </LinkItem>
+              <LinkItem>
                 <FooterLink href="/ccpa-notice">CCPA Notice</FooterLink>
               </LinkItem>
               <LinkItem>
@@ -104,7 +110,7 @@ const Footer: React.FC = () => {
                 <FooterLink href="/end-user-terms">End-User Terms of Service</FooterLink>
               </LinkItem>
               <LinkItem>
-                <FooterLink href="/merchant-disclosure">Merchant Disclosure</FooterLink>
+                <FooterLink href="/merchant-disclosure">Payment Disclosure</FooterLink>
               </LinkItem>
             </LinkList>
           </FooterSection>

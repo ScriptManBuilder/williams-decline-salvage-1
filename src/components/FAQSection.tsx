@@ -50,7 +50,7 @@ const FAQSection: React.FC = () => {
       <FAQContent>
         <FAQTitle>Frequently Asked Questions</FAQTitle>
         <FAQDescription>
-          Everything you need to know about our payment recovery platform
+          Everything you need to know about our customer payment assistance
         </FAQDescription>
         <FAQList>
           {faqs.map((faq, index) => (

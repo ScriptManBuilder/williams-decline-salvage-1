@@ -28,7 +28,7 @@ const PrivacyPage: React.FC = () => {
             <LegalParagraph>
               {process.env.REACT_APP_COMPANY_NAME} ("we," "us," or "our") is committed to protecting your privacy. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use 
-              our payment recovery services and visit our website.
+              our customer payment assistance services and visit our website.
             </LegalParagraph>
             <LegalParagraph>
               By using our services, you consent to the data practices described in this policy. If you do not agree 
@@ -46,19 +46,18 @@ const PrivacyPage: React.FC = () => {
               Personal Information
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Contact Information:</strong> Name, email address, phone number, business address</LegalListItem>
-              <LegalListItem><strong>Account Information:</strong> Username, password, account preferences</LegalListItem>
-              <LegalListItem><strong>Business Information:</strong> Company name, business type, tax identification number</LegalListItem>
-              <LegalListItem><strong>Financial Information:</strong> Payment card details, bank account information, transaction history</LegalListItem>
+              <LegalListItem><strong>Contact Information:</strong> Name, email address, phone number, shipping address</LegalListItem>
+              <LegalListItem><strong>Payment Information:</strong> Payment card details, billing address</LegalListItem>
+              <LegalListItem><strong>Order Information:</strong> Products ordered, order amounts, order dates</LegalListItem>
             </LegalList>
 
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
-              Customer Data
+              Order and Transaction Data
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Transaction Data:</strong> Payment attempts, success/failure status, transaction amounts</LegalListItem>
-              <LegalListItem><strong>Customer Information:</strong> Names, email addresses, payment details of your customers</LegalListItem>
-              <LegalListItem><strong>Communication Records:</strong> Email correspondence, support tickets, payment notifications</LegalListItem>
+              <LegalListItem><strong>Transaction Data:</strong> Payment status, transaction amounts, payment methods used</LegalListItem>
+              <LegalListItem><strong>Order Details:</strong> Direct mail offer details, products ordered, delivery information</LegalListItem>
+              <LegalListItem><strong>Communication Records:</strong> Email correspondence, support tickets, payment update notifications</LegalListItem>
             </LegalList>
 
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
@@ -77,12 +76,12 @@ const PrivacyPage: React.FC = () => {
               We use the collected information for various purposes:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Service Delivery:</strong> Process transactions, recover failed payments, send payment reminders</LegalListItem>
-              <LegalListItem><strong>Account Management:</strong> Create and maintain your account, authenticate users, provide support</LegalListItem>
-              <LegalListItem><strong>Communication:</strong> Send service updates, transaction notifications, marketing communications</LegalListItem>
-              <LegalListItem><strong>Analytics:</strong> Analyze usage patterns, improve service performance, develop new features</LegalListItem>
-              <LegalListItem><strong>Compliance:</strong> Comply with legal obligations, prevent fraud, enforce our terms</LegalListItem>
-              <LegalListItem><strong>Marketing:</strong> Send promotional materials, personalize content, conduct market research</LegalListItem>
+              <LegalListItem><strong>Order Fulfillment:</strong> Process your payments, complete your orders, send order confirmations</LegalListItem>
+              <LegalListItem><strong>Customer Support:</strong> Assist with payment issues, answer questions, provide order support</LegalListItem>
+              <LegalListItem><strong>Communication:</strong> Send order updates, payment confirmations, delivery notifications</LegalListItem>
+              <LegalListItem><strong>Service Improvement:</strong> Analyze service quality, improve customer experience</LegalListItem>
+              <LegalListItem><strong>Compliance:</strong> Comply with legal obligations, prevent fraud, protect customer security</LegalListItem>
+              <LegalListItem><strong>Marketing:</strong> Send promotional materials about products and services (with your consent)</LegalListItem>
             </LegalList>
           </LegalSection>
 
@@ -93,12 +92,11 @@ const PrivacyPage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Service Providers:</strong> Payment processors, email service providers, analytics platforms, 
-                cloud hosting providers who assist in delivering our services
+                <strong>Service Providers:</strong> Payment processors, shipping companies, email service providers, 
+                customer support platforms who assist in fulfilling your orders
               </LegalListItem>
               <LegalListItem>
-                <strong>Business Partners:</strong> E-commerce platforms, payment gateways, and integration partners 
-                with whom you've authorized data sharing
+                <strong>Merchants:</strong> The original merchant or company whose products you ordered via direct mail
               </LegalListItem>
               <LegalListItem>
                 <strong>Legal Requirements:</strong> Law enforcement, regulatory authorities, or courts when required 
@@ -142,9 +140,9 @@ const PrivacyPage: React.FC = () => {
               We retain your information for as long as necessary to fulfill the purposes outlined in this Privacy Policy:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Active Accounts:</strong> Account and transaction data retained while your account is active</LegalListItem>
-              <LegalListItem><strong>Closed Accounts:</strong> Data retained for 7 years after account closure for legal and compliance purposes</LegalListItem>
+              <LegalListItem><strong>Order Records:</strong> Order and payment data retained for 7 years for legal and compliance purposes</LegalListItem>
               <LegalListItem><strong>Transaction Records:</strong> Financial records retained for 10 years as required by law</LegalListItem>
+              <LegalListItem><strong>Support Records:</strong> Customer support communications retained for 3 years</LegalListItem>
               <LegalListItem><strong>Marketing Data:</strong> Deleted within 3 years of last interaction or upon opt-out request</LegalListItem>
               <LegalListItem><strong>Anonymized Data:</strong> May be retained indefinitely for analytics and research</LegalListItem>
             </LegalList>

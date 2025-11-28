@@ -26,39 +26,38 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Introduction</LegalSectionTitle>
             <LegalParagraph>
-              This Digital Products Policy governs your purchase and use of digital products and services offered by 
-              {process.env.REACT_APP_COMPANY_NAME}. By purchasing or accessing our digital products, you agree to the 
-              terms outlined in this policy.
+              We serve only direct mail clients. This Digital Products Policy governs your purchase of digital products and services 
+              through our direct mail offers. By purchasing or accessing digital products, you agree to the terms outlined in this policy.
             </LegalParagraph>
             <LegalParagraph>
-              Our digital products include software-as-a-service (SaaS) subscriptions, payment recovery tools, analytics 
-              dashboards, API access, and any other digital services or downloadable content we provide.
+              Digital products may include software downloads, digital content, online courses, ebooks, digital subscriptions, 
+              streaming services, and any other downloadable or online-accessible products offered through direct mail.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
             <LegalSectionTitle>Types of Digital Products</LegalSectionTitle>
             <LegalParagraph>
-              We offer the following categories of digital products:
+              Digital products purchased through direct mail may include:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Software-as-a-Service (SaaS):</strong> Cloud-based payment recovery platform accessible via web browser
+                <strong>Software & Applications:</strong> Desktop software, mobile apps, and web-based applications
               </LegalListItem>
               <LegalListItem>
-                <strong>API Access:</strong> RESTful API for integration with your e-commerce platform or systems
+                <strong>Digital Content:</strong> Ebooks, audiobooks, music, videos, and other downloadable media
               </LegalListItem>
               <LegalListItem>
-                <strong>Analytics & Reports:</strong> Data visualization tools, custom reports, and business intelligence features
+                <strong>Online Courses:</strong> Educational content, training programs, and instructional materials
               </LegalListItem>
               <LegalListItem>
-                <strong>Mobile Applications:</strong> iOS and Android apps for monitoring payment recovery performance
+                <strong>Subscriptions:</strong> Access to streaming services, digital publications, or membership content
               </LegalListItem>
               <LegalListItem>
-                <strong>Plugins & Integrations:</strong> Pre-built connectors for popular e-commerce platforms
+                <strong>Digital Services:</strong> Cloud storage, online tools, and web-based services
               </LegalListItem>
               <LegalListItem>
-                <strong>Documentation & Resources:</strong> Technical guides, API documentation, best practices, and training materials
+                <strong>Game Content:</strong> Video games, in-game content, and gaming subscriptions
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -66,27 +65,26 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Purchase and Payment</LegalSectionTitle>
             <LegalParagraph>
-              When purchasing digital products from us:
+              When purchasing digital products through direct mail:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Pricing:</strong> All prices are displayed in USD and exclude applicable taxes unless otherwise stated
+                <strong>Pricing:</strong> All prices are as stated in your direct mail offer and include applicable taxes unless noted
               </LegalListItem>
               <LegalListItem>
-                <strong>Payment Methods:</strong> We accept major credit cards, PayPal, and bank transfers for qualified businesses
+                <strong>Payment Methods:</strong> We accept major credit cards, debit cards, PayPal, and other payment methods as indicated
               </LegalListItem>
               <LegalListItem>
-                <strong>Billing Cycles:</strong> Subscriptions are billed monthly or annually, depending on your selected plan
+                <strong>One-Time Purchases:</strong> Most digital products are one-time purchases with lifetime access
               </LegalListItem>
               <LegalListItem>
-                <strong>Auto-Renewal:</strong> Subscriptions automatically renew unless canceled before the renewal date
+                <strong>Subscriptions:</strong> Some products may include recurring subscriptions billed monthly or annually
               </LegalListItem>
               <LegalListItem>
-                <strong>Price Changes:</strong> We may change pricing with 30 days' notice; existing customers are grandfathered 
-                for their current billing cycle
+                <strong>Auto-Renewal:</strong> Subscription products automatically renew unless you cancel before renewal
               </LegalListItem>
               <LegalListItem>
-                <strong>Taxes:</strong> You are responsible for any applicable sales tax, VAT, or other taxes
+                <strong>Confirmation:</strong> You will receive an email confirmation with purchase details and access instructions
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -94,23 +92,26 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Delivery and Access</LegalSectionTitle>
             <LegalParagraph>
-              Digital products are delivered and accessed as follows:
+              Digital products are delivered electronically:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Immediate Access:</strong> SaaS products are accessible immediately upon successful payment and account creation
+                <strong>Immediate Delivery:</strong> Most products are accessible immediately after successful payment
               </LegalListItem>
               <LegalListItem>
-                <strong>API Credentials:</strong> API keys and authentication tokens are provided via your account dashboard
+                <strong>Email Delivery:</strong> Download links, access codes, and login credentials are sent to your email
               </LegalListItem>
               <LegalListItem>
-                <strong>Download Links:</strong> Plugins and mobile apps can be downloaded from your account or respective app stores
+                <strong>Download Links:</strong> Software and digital content can be downloaded from the links provided
               </LegalListItem>
               <LegalListItem>
-                <strong>Email Delivery:</strong> Purchase confirmations, license keys, and access instructions are sent to your registered email
+                <strong>Online Access:</strong> Streaming content and online courses are accessed through secure login portals
               </LegalListItem>
               <LegalListItem>
-                <strong>Account Required:</strong> Most digital products require an active account for access and ongoing use
+                <strong>License Keys:</strong> Software products may include license keys or activation codes
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Processing Time:</strong> Most digital products are delivered within minutes; some may take up to 24 hours
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -118,27 +119,26 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>License and Usage Rights</LegalSectionTitle>
             <LegalParagraph>
-              Your license to use our digital products is subject to the following terms:
+              Your license to use digital products is subject to the following terms:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>License Grant:</strong> We grant you a non-exclusive, non-transferable, revocable license to use our 
-                digital products for your internal business purposes
+                <strong>Personal Use License:</strong> Digital products are licensed for your personal, non-commercial use only
               </LegalListItem>
               <LegalListItem>
-                <strong>Account-Based:</strong> Licenses are tied to your account and cannot be shared or transferred without authorization
+                <strong>Non-Transferable:</strong> Licenses cannot be shared, transferred, or resold to others
               </LegalListItem>
               <LegalListItem>
-                <strong>User Limits:</strong> Usage is subject to user limits, API rate limits, and data processing caps as 
-                specified in your plan
+                <strong>Device Limits:</strong> Some products may have limits on the number of devices where they can be used
               </LegalListItem>
               <LegalListItem>
-                <strong>Prohibited Uses:</strong> You may not reverse engineer, decompile, redistribute, resell, or create 
-                derivative works from our products
+                <strong>Prohibited Uses:</strong> You may not copy, distribute, reverse engineer, or create derivative works
               </LegalListItem>
               <LegalListItem>
-                <strong>Intellectual Property:</strong> All rights, title, and interest in our digital products remain with 
-                {process.env.REACT_APP_COMPANY_NAME}
+                <strong>Copyright:</strong> All digital products are protected by copyright and remain the property of their creators
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Revocation:</strong> Licenses may be revoked if you violate these terms or applicable laws
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -150,22 +150,19 @@ const DigitalProductsPage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>No Returns:</strong> Digital products cannot be "returned" in the traditional sense once accessed or downloaded
+                <strong>No Returns:</strong> Digital products cannot be returned once accessed, downloaded, or license key is provided
               </LegalListItem>
               <LegalListItem>
-                <strong>30-Day Guarantee:</strong> New customers can request a full refund within 30 days if not satisfied with the service
+                <strong>Satisfaction Guarantee:</strong> Request a full refund within 7 days if you are not satisfied with the product
               </LegalListItem>
               <LegalListItem>
-                <strong>Technical Issues:</strong> Refunds may be granted if the product is fundamentally broken or inaccessible 
-                due to our fault
+                <strong>Technical Issues:</strong> Full refund available if the product does not work as described and cannot be fixed
               </LegalListItem>
               <LegalListItem>
-                <strong>Subscription Refunds:</strong> Monthly subscriptions are non-refundable; annual subscriptions may be 
-                eligible for prorated refunds within 30 days
+                <strong>Subscriptions:</strong> Cancel subscriptions anytime; no refunds for the current billing period
               </LegalListItem>
               <LegalListItem>
-                <strong>Refund Process:</strong> All refund requests must be submitted to {process.env.REACT_APP_EMAIL_SUPPORT} 
-                with account details and reason
+                <strong>Refund Process:</strong> Email {process.env.REACT_APP_EMAIL_SUPPORT} with your order number and reason for refund
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
@@ -176,78 +173,74 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Product Updates and Modifications</LegalSectionTitle>
             <LegalParagraph>
-              We continuously improve our digital products:
+              Digital products may receive updates and improvements:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Automatic Updates:</strong> SaaS products are automatically updated with new features, bug fixes, 
-                and security patches
+                <strong>Free Updates:</strong> Software and digital content updates are typically provided free of charge
               </LegalListItem>
               <LegalListItem>
-                <strong>Breaking Changes:</strong> We will provide advance notice of any updates that may affect your integration 
-                or usage
+                <strong>Automatic Updates:</strong> Online services and subscriptions update automatically
               </LegalListItem>
               <LegalListItem>
-                <strong>Feature Changes:</strong> Features may be added, modified, or deprecated based on business needs and 
-                user feedback
+                <strong>Download Updates:</strong> Software updates may require downloading new versions
               </LegalListItem>
               <LegalListItem>
-                <strong>Version Support:</strong> API versions are supported for a minimum of 12 months after deprecation notice
+                <strong>Compatibility:</strong> Updates may require newer operating systems or hardware
               </LegalListItem>
               <LegalListItem>
-                <strong>No Obligation:</strong> We are not obligated to provide any specific updates or maintain features indefinitely
+                <strong>No Guarantee:</strong> We are not obligated to provide updates or maintain products indefinitely
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Service Level and Availability</LegalSectionTitle>
+            <LegalSectionTitle>Product Availability</LegalSectionTitle>
             <LegalParagraph>
-              We strive to provide reliable access to our digital products:
+              We work to ensure digital products remain accessible:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Uptime Target:</strong> We aim for 99.9% uptime for our SaaS products, excluding scheduled maintenance
+                <strong>Download Access:</strong> Purchased products remain available for download from your account
               </LegalListItem>
               <LegalListItem>
-                <strong>Maintenance Windows:</strong> Scheduled maintenance is performed during off-peak hours with advance notice
+                <strong>Online Services:</strong> Subscription services are available 24/7 with minimal scheduled downtime
               </LegalListItem>
               <LegalListItem>
-                <strong>Monitoring:</strong> Our systems are monitored 24/7 for performance and availability issues
+                <strong>Maintenance:</strong> Occasional maintenance may temporarily limit access
               </LegalListItem>
               <LegalListItem>
-                <strong>Status Updates:</strong> Service status and incident reports are available on our status page
+                <strong>Backup Copies:</strong> We recommend downloading and backing up purchased digital products
               </LegalListItem>
               <LegalListItem>
-                <strong>No Guarantee:</strong> While we strive for high availability, we do not guarantee uninterrupted or 
-                error-free service
+                <strong>Service Changes:</strong> Online services may be modified or discontinued with reasonable notice
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Technical Support</LegalSectionTitle>
+            <LegalSectionTitle>Customer Support</LegalSectionTitle>
             <LegalParagraph>
               Support for digital products includes:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Documentation:</strong> Comprehensive guides, API references, and FAQs available in your account
+                <strong>Product Help:</strong> Instructions and FAQs for using your digital products
               </LegalListItem>
               <LegalListItem>
-                <strong>Email Support:</strong> Technical support via email at {process.env.REACT_APP_EMAIL_SUPPORT}
+                <strong>Email Support:</strong> Contact us at {process.env.REACT_APP_EMAIL_SUPPORT} for assistance
               </LegalListItem>
               <LegalListItem>
-                <strong>Response Times:</strong> We aim to respond to support requests within 24 hours on business days
+                <strong>Response Times:</strong> We respond to support requests within 24-48 hours
               </LegalListItem>
               <LegalListItem>
-                <strong>Priority Support:</strong> Higher-tier plans include priority support with faster response times
+                <strong>Technical Issues:</strong> Help with download problems, installation, and access issues
               </LegalListItem>
               <LegalListItem>
-                <strong>Community Forum:</strong> Access to user community for peer-to-peer assistance
+                <strong>Product Questions:</strong> Answers about features, usage, and compatibility
               </LegalListItem>
               <LegalListItem>
-                <strong>Scope:</strong> Support covers product functionality, not custom development or third-party integrations
+                <strong>Scope:</strong> Support covers product functionality, not personal device troubleshooting
               </LegalListItem>
             </LegalList>
           </LegalSection>
