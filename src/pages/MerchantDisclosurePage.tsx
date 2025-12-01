@@ -19,16 +19,16 @@ const MerchantDisclosurePage: React.FC = () => {
       <Header />
       <LegalPageContainer>
         <LegalHeroSection>
-          <LegalTitle>Payment Disclosure</LegalTitle>
+          <LegalTitle>Merchant Platform Services Disclosure</LegalTitle>
         </LegalHeroSection>
 
         <LegalContent>
           <LegalSection>
-            <LegalSectionTitle>Important Payment Information</LegalSectionTitle>
+            <LegalSectionTitle>Important Platform Information</LegalSectionTitle>
             <LegalParagraph>
-              We serve only direct mail clients. This disclosure provides important information about {process.env.REACT_APP_COMPANY_NAME}, 
-              the company processing payments for your direct mail purchase. This information is provided in compliance with consumer 
-              protection laws and payment card industry regulations.
+              This disclosure provides important information about {process.env.REACT_APP_COMPANY_NAME}, 
+              our decline salvage platform, and the merchant services we provide. This information is provided in compliance with 
+              SaaS industry standards, payment processor requirements, and business service regulations.
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
               Legal Business Name:
@@ -63,31 +63,34 @@ const MerchantDisclosurePage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Our Services</LegalSectionTitle>
+            <LegalSectionTitle>Our Platform Services</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} provides customer payment assistance services for direct mail purchases. 
-              Our services include:
+              {process.env.REACT_APP_COMPANY_NAME} provides a decline salvage platform designed exclusively for merchants to recover 
+              failed transactions and reduce involuntary churn. Our platform services include:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Payment Processing:</strong> Secure processing of credit card, debit card, and other payment methods
+                <strong>API Integration:</strong> RESTful API for transmitting failed transaction data and receiving recovery status updates
               </LegalListItem>
               <LegalListItem>
-                <strong>Payment Assistance:</strong> Help with updating payment information when your card is declined
+                <strong>Automated Recovery Workflows:</strong> Smart retries, customer outreach sequencing, and payment method update requests
               </LegalListItem>
               <LegalListItem>
-                <strong>Order Support:</strong> Assistance with completing your direct mail order
+                <strong>Hosted Payment Pages:</strong> PCI-compliant, branded pages where your customers can securely update payment information
               </LegalListItem>
               <LegalListItem>
-                <strong>Customer Service:</strong> Support for questions about your purchase and payment
+                <strong>Multi-Channel Communications:</strong> Email and SMS templates for payment recovery notifications sent to your customers
               </LegalListItem>
               <LegalListItem>
-                <strong>Secure Communications:</strong> Email and phone support for payment-related inquiries
+                <strong>Analytics Dashboard:</strong> Real-time metrics on decline rates, recovery success, revenue recovered, and customer engagement
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Merchant Support:</strong> Technical integration assistance, platform troubleshooting, and strategic consultation
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              We process payments on behalf of the merchant whose direct mail offer you responded to. 
-              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we serve direct mail customers across the United States.
+              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we serve B2B merchants across subscription businesses, SaaS companies, 
+              e-commerce platforms, and direct-to-consumer brands.
             </LegalParagraph>
           </LegalSection>
 
@@ -141,28 +144,28 @@ const MerchantDisclosurePage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Customer Service and Support</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Support and Success</LegalSectionTitle>
             <LegalParagraph>
-              We are committed to providing excellent customer service:
+              We are committed to providing excellent merchant support:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Contact Methods:</strong> You may reach us by phone at {process.env.REACT_APP_PHONE_DISPLAY}, 
-                by email at {process.env.REACT_APP_EMAIL_SUPPORT}, or through our website contact form
+                <strong>Contact Methods:</strong> Reach our merchant support team by phone at {process.env.REACT_APP_PHONE_DISPLAY}, 
+                by email at {process.env.REACT_APP_EMAIL_SUPPORT}, or through your merchant dashboard
               </LegalListItem>
               <LegalListItem>
-                <strong>Response Time:</strong> We aim to respond to all customer inquiries within 24 hours during business days
+                <strong>Response Time:</strong> We aim to respond to all merchant inquiries within 24 hours during business days
               </LegalListItem>
               <LegalListItem>
-                <strong>Support Languages:</strong> Customer support is available in English
+                <strong>Support Languages:</strong> Merchant support is available in English
               </LegalListItem>
               <LegalListItem>
-                <strong>Emergency Support:</strong> For urgent payment issues or suspected fraud, please call our phone line 
-                for immediate assistance
+                <strong>Priority Support:</strong> For urgent API issues, platform downtime, or technical emergencies, 
+                call our priority support line for immediate assistance
               </LegalListItem>
               <LegalListItem>
-                <strong>Self-Service Options:</strong> Many common issues can be resolved through your account dashboard, 
-                including updating payment information and reviewing transaction history
+                <strong>Self-Service Portal:</strong> Access your merchant dashboard to configure settings, view analytics, 
+                download reports, and manage API keys
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -275,106 +278,104 @@ const MerchantDisclosurePage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Dispute Resolution Process</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Billing Dispute Resolution</LegalSectionTitle>
             <LegalParagraph>
-              If you have a dispute regarding a transaction:
+              If you have a billing dispute regarding platform subscription fees or commission charges:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Step 1 - Contact Us:</strong> Reach out to our customer service team at {process.env.REACT_APP_EMAIL_SUPPORT} 
-                or {process.env.REACT_APP_PHONE_DISPLAY} with your concerns
+                <strong>Step 1 - Contact Billing Support:</strong> Email our billing team at {process.env.REACT_APP_EMAIL_SUPPORT} 
+                or call {process.env.REACT_APP_PHONE_DISPLAY} with invoice details and dispute reason
               </LegalListItem>
               <LegalListItem>
-                <strong>Step 2 - Investigation:</strong> We will investigate your dispute and respond within 5-7 business days
+                <strong>Step 2 - Investigation:</strong> Our billing team will review transaction logs, API usage, and invoice calculations within 5-7 business days
               </LegalListItem>
               <LegalListItem>
-                <strong>Step 3 - Resolution:</strong> If your dispute is valid, we will process a refund or take corrective action
+                <strong>Step 3 - Resolution:</strong> Valid billing errors will be corrected via credit or refund to your business payment method
               </LegalListItem>
               <LegalListItem>
-                <strong>Step 4 - Escalation:</strong> If you are not satisfied with our response, you may escalate to your 
-                card issuer or payment provider
+                <strong>Step 4 - Escalation:</strong> Unresolved disputes may be escalated to senior management or handled according 
+                to arbitration clauses in your Merchant Service Agreement
               </LegalListItem>
               <LegalListItem>
-                <strong>Chargeback Rights:</strong> You retain the right to dispute charges with your card issuer, but we 
-                encourage resolution through direct contact first
+                <strong>Chargeback Prevention:</strong> We encourage direct resolution before initiating chargebacks, which may result 
+                in account suspension per our service terms
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Fraud Prevention and Detection</LegalSectionTitle>
+            <LegalSectionTitle>Platform Security & Fraud Prevention</LegalSectionTitle>
             <LegalParagraph>
-              We employ multiple measures to prevent and detect fraudulent transactions:
+              We employ enterprise-grade security measures to protect merchant and customer data:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Real-Time Monitoring:</strong> Transactions are monitored in real-time for suspicious activity
+                <strong>Real-Time Threat Monitoring:</strong> Continuous monitoring of API traffic and transaction patterns for anomalies
               </LegalListItem>
               <LegalListItem>
-                <strong>Address Verification:</strong> AVS (Address Verification Service) checks billing address information
+                <strong>API Authentication:</strong> OAuth 2.0, API key rotation, IP whitelisting, and rate limiting for merchant integrations
               </LegalListItem>
               <LegalListItem>
-                <strong>CVV Verification:</strong> Card security codes (CVV/CVC) are required for card-not-present transactions
+                <strong>Data Encryption:</strong> AES-256 encryption at rest, TLS 1.3 for data in transit
               </LegalListItem>
               <LegalListItem>
-                <strong>3D Secure:</strong> Additional authentication may be required for high-risk transactions
+                <strong>Tokenization:</strong> Full payment card tokenization - no raw card data stored on our platform
               </LegalListItem>
               <LegalListItem>
-                <strong>Fraud Scoring:</strong> Machine learning algorithms assess transaction risk in real-time
+                <strong>Fraud Scoring:</strong> Machine learning algorithms assess transaction risk and flag suspicious recovery attempts
               </LegalListItem>
               <LegalListItem>
-                <strong>Reporting Fraud:</strong> If you suspect fraudulent activity on your account, contact us immediately 
-                at {process.env.REACT_APP_PHONE_DISPLAY}
+                <strong>Reporting Security Incidents:</strong> Merchants must report suspected account breaches or API key compromises 
+                immediately to {process.env.REACT_APP_PHONE_DISPLAY}
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Regulatory Compliance</LegalSectionTitle>
+            <LegalSectionTitle>Regulatory Compliance & Certifications</LegalSectionTitle>
             <LegalParagraph>
-              We comply with all applicable regulations and industry standards:
+              Our platform maintains compliance with all applicable payment industry regulations:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Payment Card Industry Standards:</strong> PCI-DSS Level 1 compliance maintained
+                <strong>PCI-DSS Level 1:</strong> Highest level of payment card industry data security standard certification
               </LegalListItem>
               <LegalListItem>
-                <strong>Data Protection Laws:</strong> GDPR (General Data Protection Regulation) and CCPA (California Consumer 
-                Privacy Act) compliant
+                <strong>SOC 2 Type II:</strong> Annual third-party audits for security, availability, and confidentiality controls
               </LegalListItem>
               <LegalListItem>
-                <strong>Electronic Signatures:</strong> E-SIGN Act and UETA (Uniform Electronic Transactions Act) compliance
+                <strong>GDPR Compliance:</strong> Data Processing Agreements (DPA) available for merchants serving EU customers
               </LegalListItem>
               <LegalListItem>
-                <strong>Consumer Protection:</strong> Federal Trade Commission (FTC) guidelines and state consumer protection laws
+                <strong>CCPA Compliance:</strong> California Consumer Privacy Act compliance for merchants serving California residents
               </LegalListItem>
               <LegalListItem>
-                <strong>Anti-Money Laundering:</strong> AML and KYC (Know Your Customer) procedures for high-value transactions
+                <strong>E-SIGN Act:</strong> Electronic signature compliance for merchant service agreements and customer communications
               </LegalListItem>
               <LegalListItem>
-                <strong>State Registrations:</strong> Registered in all required states for payment processing operations
+                <strong>State Registrations:</strong> Licensed and registered in all required jurisdictions for payment services
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Recurring Payments and Subscriptions</LegalSectionTitle>
+            <LegalSectionTitle>Platform Subscription & Billing Terms</LegalSectionTitle>
             <LegalParagraph>
-              If your transaction includes recurring payments or subscriptions:
+              For merchants subscribed to recurring platform services:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Authorization:</strong> You authorize recurring charges to your payment method until you cancel
+                <strong>Authorization:</strong> By subscribing, you authorize recurring charges to your business payment method until subscription cancellation
               </LegalListItem>
               <LegalListItem>
-                <strong>Billing Cycle:</strong> Charges occur on a monthly, quarterly, or annual basis as specified at signup
+                <strong>Billing Cycle:</strong> Monthly or annual subscription charges as specified in your pricing plan, plus performance-based commissions
               </LegalListItem>
               <LegalListItem>
-                <strong>Payment Reminders:</strong> You will receive email notifications before each recurring charge
+                <strong>Invoice Notifications:</strong> Email invoices sent to billing contact 3-5 days before each charge
               </LegalListItem>
               <LegalListItem>
-                <strong>Cancellation:</strong> You may cancel subscriptions at any time through your account dashboard or 
-                by contacting customer service
+                <strong>Subscription Management:</strong> Cancel or modify subscriptions via merchant dashboard or by contacting account management
               </LegalListItem>
               <LegalListItem>
                 <strong>Refund for Canceled Subscriptions:</strong> No refunds are provided for the remainder of the current 
@@ -434,7 +435,7 @@ const MerchantDisclosurePage: React.FC = () => {
               {process.env.REACT_APP_COMPANY_NAME}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
-              Attention: Customer Service Department
+              Attention: Merchant Support Team
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
               {process.env.REACT_APP_COMPANY_ADDRESS}

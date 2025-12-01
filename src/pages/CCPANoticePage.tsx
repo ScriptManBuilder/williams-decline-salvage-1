@@ -19,32 +19,32 @@ const CCPANoticePage: React.FC = () => {
       <Header />
       <LegalPageContainer>
         <LegalHeroSection>
-          <LegalTitle>California Consumer Privacy Act (CCPA) Notice</LegalTitle>
+          <LegalTitle>California Merchant Privacy Rights (CCPA) Notice</LegalTitle>
         </LegalHeroSection>
 
         <LegalContent>
           <LegalSection>
-            <LegalSectionTitle>Your California Privacy Rights</LegalSectionTitle>
+            <LegalSectionTitle>Your Business Privacy Rights</LegalSectionTitle>
             <LegalParagraph>
-              This notice applies to California residents and describes how {process.env.REACT_APP_COMPANY_NAME} collects, 
-              uses, and shares your personal information, and explains your rights under the California Consumer 
-              Privacy Act (CCPA) and California Privacy Rights Act (CPRA).
+              This notice applies to California-based merchant businesses and describes how {process.env.REACT_APP_COMPANY_NAME} collects, 
+              uses, and shares your business information and customer data processed through our platform, and explains your rights under the California Consumer 
+              Privacy Act (CCPA) and California Privacy Rights Act (CPRA) as they apply to business relationships.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Categories of Personal Information We Collect</LegalSectionTitle>
+            <LegalSectionTitle>Categories of Business Information We Collect</LegalSectionTitle>
             <LegalParagraph>
-              We may collect the following categories of personal information:
+              We collect the following categories of information from merchant businesses:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Identifiers:</strong> Name, email address, phone number, postal address, IP address</LegalListItem>
-              <LegalListItem><strong>Commercial Information:</strong> Payment history, transaction records, purchase patterns</LegalListItem>
-              <LegalListItem><strong>Financial Information:</strong> Payment card details, bank account information</LegalListItem>
-              <LegalListItem><strong>Internet Activity:</strong> Browsing history, search history, interaction with our website</LegalListItem>
-              <LegalListItem><strong>Geolocation Data:</strong> Physical location or movements</LegalListItem>
-              <LegalListItem><strong>Professional Information:</strong> Employment details, business information</LegalListItem>
-              <LegalListItem><strong>Inferences:</strong> Preferences, characteristics, behavior patterns</LegalListItem>
+              <LegalListItem><strong>Business Identifiers:</strong> Company name, EIN, DBA, business email, business phone, authorized representative contacts</LegalListItem>
+              <LegalListItem><strong>Commercial Information:</strong> Subscription history, transaction volume records, recovery metrics, API usage patterns</LegalListItem>
+              <LegalListItem><strong>Financial Information:</strong> Bank account details for payouts, billing payment methods, invoice history</LegalListItem>
+              <LegalListItem><strong>Internet Activity:</strong> Dashboard usage, API calls, integration activity, feature adoption metrics</LegalListItem>
+              <LegalListItem><strong>Customer Data:</strong> Failed transaction records from your customers that you transmit to our platform for recovery purposes</LegalListItem>
+              <LegalListItem><strong>Professional Information:</strong> Business type, industry vertical, integration details, payment processor information</LegalListItem>
+              <LegalListItem><strong>Inferences:</strong> Platform usage patterns, recovery optimization insights, merchant success indicators</LegalListItem>
             </LegalList>
           </LegalSection>
 

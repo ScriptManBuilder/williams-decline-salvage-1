@@ -56,19 +56,19 @@ const Footer: React.FC = () => {
           </FooterSection>
 
           <FooterSection>
-            <FooterSectionTitle>Quick Links</FooterSectionTitle>
+            <FooterSectionTitle>Platform</FooterSectionTitle>
             <LinkList>
               <LinkItem>
-                <FooterLink as="button" onClick={() => handleScrollTo('#features')}>Features</FooterLink>
+                <FooterLink as="button" onClick={() => handleScrollTo('#features')}>What We Do</FooterLink>
               </LinkItem>
               <LinkItem>
-                <FooterLink as="button" onClick={() => handleScrollTo('#stats')}>Industry Stats</FooterLink>
+                <FooterLink as="button" onClick={() => handleScrollTo('#stats')}>How It Works</FooterLink>
               </LinkItem>
               <LinkItem>
-                <FooterLink as="button" onClick={() => handleScrollTo('#how-it-works')}>How It Works</FooterLink>
+                <FooterLink as="button" onClick={() => handleScrollTo('#how-it-works')}>Results & Proof Points</FooterLink>
               </LinkItem>
               <LinkItem>
-                <FooterLink as="button" onClick={() => handleScrollTo('#faq')}>FAQ</FooterLink>
+                <FooterLink as="button" onClick={() => handleScrollTo('#faq')}>Who We Serve</FooterLink>
               </LinkItem>
             </LinkList>
           </FooterSection>
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 <FooterLink href="/company-info">Company Information</FooterLink>
               </LinkItem>
               <LinkItem>
-                <FooterLink href="/support">Customer Support</FooterLink>
+                <FooterLink href="/support">Merchant Support</FooterLink>
               </LinkItem>
               <LinkItem>
                 <FooterLink href="/ccpa-notice">CCPA Notice</FooterLink>
@@ -116,10 +116,10 @@ const Footer: React.FC = () => {
           </FooterSection>
 
           <FooterSection>
-            <FooterSectionTitle>Contact Us</FooterSectionTitle>
+            <FooterSectionTitle>Contact Sales</FooterSectionTitle>
             <ContactCard>
               <ContactItem>
-                <ContactLabel>Email Support</ContactLabel>
+                <ContactLabel>Sales Email</ContactLabel>
                 <ContactValue as="div" style={{ pointerEvents: 'none', userSelect: 'none' }}>
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
                 </ContactValue>
               </ContactItem>
               <ContactItem>
-                <ContactLabel>Customer Service</ContactLabel>
+                <ContactLabel>Sales Phone</ContactLabel>
                 <ContactValue href={`tel:${companyPhone.replace(/\s+/g, '')}`}>
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
 
         <FooterBottom>
           <p>&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
-          <p>Do you not recognize a charge on your bank statement? We can help to resolve your query quickly and efficiently.</p>
+          <p>Enterprise decline-salvage platform for merchants. PCI-DSS compliant. GDPR & CCPA ready.</p>
         </FooterBottom>
       </FooterContent>
     </FooterContainer>

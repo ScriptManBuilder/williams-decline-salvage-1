@@ -26,22 +26,23 @@ const ESignaturePage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Introduction</LegalSectionTitle>
             <LegalParagraph>
-              This E-Signature Disclosure Agreement ("Agreement") explains your rights and responsibilities when 
-              you choose to conduct business with {process.env.REACT_APP_COMPANY_NAME} electronically, including 
-              the use of electronic signatures, electronic records, and electronic communications.
+              This E-Signature Disclosure Agreement ("Agreement") explains your business rights and responsibilities when 
+              you choose to conduct business with {process.env.REACT_APP_COMPANY_NAME} electronically as a merchant client, including 
+              the use of electronic signatures for service agreements, electronic records for invoices and reports, and electronic communications 
+              for platform updates and support.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
             <LegalSectionTitle>Consent to Electronic Signatures</LegalSectionTitle>
             <LegalParagraph>
-              By using our services and agreeing to this disclosure, you consent to:
+              By subscribing to our merchant platform and agreeing to this disclosure, you consent to:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Conduct transactions electronically</LegalListItem>
-              <LegalListItem>Receive disclosures, notices, and other documents electronically</LegalListItem>
-              <LegalListItem>Use electronic signatures to sign agreements and documents</LegalListItem>
-              <LegalListItem>Accept that electronic signatures have the same legal effect as handwritten signatures</LegalListItem>
+              <LegalListItem>Conduct merchant service transactions and platform operations electronically</LegalListItem>
+              <LegalListItem>Receive service agreements, invoices, platform updates, and legal notices electronically</LegalListItem>
+              <LegalListItem>Use electronic signatures to execute merchant agreements, data processing addendums, and service contracts</LegalListItem>
+              <LegalListItem>Accept that electronic signatures on merchant agreements have the same legal effect as handwritten signatures</LegalListItem>
             </LegalList>
           </LegalSection>
 

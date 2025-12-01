@@ -26,13 +26,14 @@ const CompanyInfoPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>About Our Company</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} provides customer payment assistance services for direct mail 
-              purchases. We help customers complete their orders when payment issues occur, ensuring a smooth 
-              and secure transaction process.
+              {process.env.REACT_APP_COMPANY_NAME} is a B2B fintech platform specializing in decline salvage and involuntary churn reduction 
+              for subscription businesses, SaaS companies, and e-commerce merchants. We help businesses recover failed transactions and retain 
+              customers whose payments declined due to expired cards, insufficient funds, or temporary payment issues.
             </LegalParagraph>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              We serve only direct mail clients. If you received a direct mail offer and are experiencing 
-              payment difficulties, we are here to help you complete your purchase securely and conveniently.
+              Our platform integrates with your existing payment infrastructure and automates the recovery process through intelligent retry logic, 
+              customer outreach, and self-service payment update tools. We serve growth-stage and enterprise merchants processing high volumes of 
+              recurring transactions.
             </LegalParagraph>
           </LegalSection>
 
@@ -71,207 +72,225 @@ const CompanyInfoPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Our Services</LegalSectionTitle>
+            <LegalSectionTitle>Our Platform Services</LegalSectionTitle>
             <LegalParagraph>
-              We provide customer payment assistance services for direct mail orders:
+              We provide comprehensive decline salvage platform services for merchants:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Payment Support:</strong> Help with updating payment information when your card is declined
+                <strong>API-First Integration:</strong> RESTful API for seamless integration with your payment stack and subscription management system
               </LegalListItem>
               <LegalListItem>
-                <strong>Secure Processing:</strong> Safe and secure payment processing for your direct mail orders
+                <strong>Automated Recovery:</strong> Smart algorithms that optimize retry timing and customer outreach for maximum recovery rates
               </LegalListItem>
               <LegalListItem>
-                <strong>Order Assistance:</strong> Support with completing your purchase and tracking your order
+                <strong>Self-Service Portal:</strong> Branded, hosted payment pages where your customers can update payment methods securely
               </LegalListItem>
               <LegalListItem>
-                <strong>Customer Service:</strong> Friendly assistance for any questions about your direct mail purchase
+                <strong>Real-Time Analytics:</strong> Dashboard with recovery metrics, revenue impact, churn prevention stats, and customer engagement data
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Multi-Channel Communication:</strong> Automated email and SMS campaigns to notify customers about payment issues
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Enterprise Support:</strong> Dedicated account management, integration assistance, and strategic consultation for platform optimization
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we are committed to providing excellent 
-              customer service and ensuring your satisfaction with your direct mail purchases.
+              Established in {process.env.REACT_APP_COMPANY_BIRTH}, we have helped merchants recover millions in failed transactions and 
+              significantly reduce involuntary churn across subscription-based businesses.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Billing Information</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Billing & Invoicing</LegalSectionTitle>
             <LegalParagraph>
-              When you complete a payment through our service, the following may appear on your credit card or 
-              bank statement:
+              When you subscribe to our platform services, the following billing descriptor will appear on your business 
+              credit card or ACH bank statement:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Billing Descriptor:</strong> "WILLIAMS COLLECTION" or similar variation
+                <strong>Billing Descriptor:</strong> "WILLIAMS COLLECTION" or "{process.env.REACT_APP_COMPANY_NAME}"
               </LegalListItem>
               <LegalListItem>
-                <strong>Contact Phone:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear on your statement 
-                for customer service
+                <strong>Billing Contact:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear for billing inquiries
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Invoice Delivery:</strong> Monthly invoices sent via email to your billing contact
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              If you do not recognize a charge on your statement with this descriptor, please contact us immediately 
-              at {process.env.REACT_APP_PHONE_DISPLAY} or {process.env.REACT_APP_EMAIL_SUPPORT}. We are here to help 
-              resolve any concerns you may have.
+              For billing questions or to update payment methods, contact our accounts team at {process.env.REACT_APP_EMAIL_SUPPORT} 
+              or call {process.env.REACT_APP_PHONE_DISPLAY}.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Payment Methods</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Payment Methods</LegalSectionTitle>
             <LegalParagraph>
-              We accept the following payment methods to complete your direct mail order:
+              We accept the following payment methods for platform subscription fees and commissions:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Credit Cards:</strong> Visa, Mastercard, American Express, Discover</LegalListItem>
-              <LegalListItem><strong>Debit Cards:</strong> Visa Debit, Mastercard Debit with major card networks</LegalListItem>
-              <LegalListItem><strong>Digital Wallets:</strong> PayPal, Apple Pay, Google Pay (where available)</LegalListItem>
+              <LegalListItem><strong>Business Credit Cards:</strong> Visa, Mastercard, American Express (corporate cards accepted)</LegalListItem>
+              <LegalListItem><strong>ACH/Bank Transfer:</strong> Direct debit from your business bank account for monthly billing</LegalListItem>
+              <LegalListItem><strong>Wire Transfer:</strong> Available for annual contracts or enterprise agreements</LegalListItem>
+              <LegalListItem><strong>Net-30 Terms:</strong> Available for qualified enterprise merchants upon credit approval</LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              All payment information is processed securely through industry-leading payment processors. 
-              We never store your complete credit card information on our servers.
+              All merchant payment information is processed through PCI-DSS Level 1 compliant payment infrastructure. 
+              Payment data is tokenized and encrypted at rest.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Security and Privacy</LegalSectionTitle>
+            <LegalSectionTitle>Platform Security & Compliance</LegalSectionTitle>
             <LegalParagraph>
-              Your security and privacy are our top priorities:
+              Enterprise-grade security and compliance for merchant operations:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Secure Encryption:</strong> All payment information is encrypted using industry-standard 
-                SSL/TLS encryption
+                <strong>PCI-DSS Level 1 Certified:</strong> Highest level of payment card industry compliance for handling your customers' payment data
               </LegalListItem>
               <LegalListItem>
-                <strong>PCI Compliance:</strong> We maintain Payment Card Industry Data Security Standard (PCI-DSS) compliance
+                <strong>SOC 2 Type II Compliant:</strong> Audited controls for security, availability, and confidentiality (report available upon request)
               </LegalListItem>
               <LegalListItem>
-                <strong>Privacy Protection:</strong> Your personal information is protected according to our Privacy Policy
+                <strong>GDPR & CCPA Ready:</strong> Data processing agreements and merchant controls for global privacy compliance
               </LegalListItem>
               <LegalListItem>
-                <strong>Secure Processing:</strong> Payments are processed through certified secure payment processors
-              </LegalListItem>
-            </LegalList>
-            <LegalParagraph style={{ marginTop: '1rem' }}>
-              For detailed information about how we protect your data, please review our Privacy Policy.
-            </LegalParagraph>
-          </LegalSection>
-
-          <LegalSection>
-            <LegalSectionTitle>Customer Support</LegalSectionTitle>
-            <LegalParagraph>
-              We are here to help with any questions or concerns:
-            </LegalParagraph>
-            <LegalList>
-              <LegalListItem>
-                <strong>Phone Support:</strong> Call us at {process.env.REACT_APP_PHONE_DISPLAY} during business hours
+                <strong>Bank-Grade Encryption:</strong> TLS 1.3 for data in transit, AES-256 for data at rest
               </LegalListItem>
               <LegalListItem>
-                <strong>Email Support:</strong> Send us an email at {process.env.REACT_APP_EMAIL_SUPPORT} anytime
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Response Time:</strong> We aim to respond to all inquiries within 24 hours on business days
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Support Topics:</strong> Payment issues, order questions, account updates, general inquiries
+                <strong>Penetration Testing:</strong> Annual third-party security audits and continuous vulnerability scanning
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              Our customer support team is dedicated to ensuring you have a positive experience with your 
-              direct mail purchase.
+              For security documentation, compliance reports, or integration security reviews, contact our enterprise team.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Refund Policy</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Support & Success</LegalSectionTitle>
             <LegalParagraph>
-              Our refund policy is designed to be fair and transparent:
+              Dedicated support for merchant platform operations:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Order Cancellation:</strong> Cancel within 24 hours of purchase for a full refund 
-                (if not yet shipped)
+                <strong>Technical Support:</strong> API integration assistance, webhook troubleshooting, dashboard support
               </LegalListItem>
               <LegalListItem>
-                <strong>Product Returns:</strong> Return physical products within 30 days in original condition
+                <strong>Account Management:</strong> Strategic consultation, performance optimization, recovery strategy
               </LegalListItem>
               <LegalListItem>
-                <strong>Refund Processing:</strong> Approved refunds are processed within 5-10 business days
+                <strong>Billing Support:</strong> Invoice questions, payment method updates, plan changes
               </LegalListItem>
               <LegalListItem>
-                <strong>Contact for Refunds:</strong> Email {process.env.REACT_APP_EMAIL_SUPPORT} with your 
-                order details
+                <strong>Email Support:</strong> {process.env.REACT_APP_EMAIL_SUPPORT} (24-hour response SLA for paid plans)
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Phone Support:</strong> {process.env.REACT_APP_PHONE_DISPLAY} (business hours for enterprise clients)
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              For complete refund terms and conditions, please refer to our Refund Policy document.
+              Enterprise merchants receive priority support with dedicated account managers and faster response times.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Dispute Resolution</LegalSectionTitle>
+            <LegalSectionTitle>Service Level Agreement (SLA)</LegalSectionTitle>
             <LegalParagraph>
-              If you have concerns about a transaction:
+              Our platform performance and support commitments:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Contact Us First:</strong> Reach out to us at {process.env.REACT_APP_EMAIL_SUPPORT} or 
-                {process.env.REACT_APP_PHONE_DISPLAY}
+                <strong>Platform Uptime:</strong> 99.9% uptime guarantee (excludes scheduled maintenance windows)
               </LegalListItem>
               <LegalListItem>
-                <strong>Quick Response:</strong> We will investigate your concern and respond within 5-7 business days
+                <strong>API Response Time:</strong> Average API latency under 200ms for 95th percentile
               </LegalListItem>
               <LegalListItem>
-                <strong>Fair Resolution:</strong> We are committed to resolving disputes fairly and promptly
+                <strong>Support Response:</strong> 24-hour initial response for priority support tickets
               </LegalListItem>
               <LegalListItem>
-                <strong>Escalation:</strong> If needed, disputes can be escalated to your card issuer
-              </LegalListItem>
-            </LegalList>
-          </LegalSection>
-
-          <LegalSection>
-            <LegalSectionTitle>Terms and Policies</LegalSectionTitle>
-            <LegalParagraph>
-              Your use of our services is governed by the following documents:
-            </LegalParagraph>
-            <LegalList>
-              <LegalListItem>
-                <strong>Terms and Conditions:</strong> Complete terms governing the use of our services
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Privacy Policy:</strong> How we collect, use, and protect your personal information
-              </LegalListItem>
-              <LegalListItem>
-                <strong>Refund Policy:</strong> Terms and conditions for refunds and cancellations
+                <strong>Downtime Credits:</strong> Prorated service credits for downtime exceeding SLA thresholds
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              All terms and policies are available on our website. By completing a transaction, you agree to 
-              these terms.
+              Full SLA terms and credit procedures available in your merchant service agreement.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Contact Us</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Contract Terms</LegalSectionTitle>
             <LegalParagraph>
-              For any questions about our company or services:
+              Platform subscription and service terms:
+            </LegalParagraph>
+            <LegalList>
+              <LegalListItem>
+                <strong>Contract Term:</strong> Month-to-month or annual commitment (annual contracts receive pricing discount)
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Cancellation:</strong> 30-day written notice required for subscription cancellation
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Service Fees:</strong> Monthly subscription fee plus performance-based commission on recovered revenue
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Fee Refunds:</strong> Prorated credits for platform downtime exceeding SLA commitments
+              </LegalListItem>
+            </LegalList>
+            <LegalParagraph style={{ marginTop: '1rem' }}>
+              Complete contract terms available in our Merchant Service Agreement.
+            </LegalParagraph>
+          </LegalSection>
+
+          <LegalSection>
+            <LegalSectionTitle>Merchant Agreements & Policies</LegalSectionTitle>
+            <LegalParagraph>
+              Your platform subscription is governed by the following merchant agreements:
+            </LegalParagraph>
+            <LegalList>
+              <LegalListItem>
+                <strong>Merchant Service Agreement:</strong> Complete terms governing platform usage, fees, and service delivery
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Data Processing Agreement:</strong> How we process your customers' payment data on your behalf
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Privacy Policy:</strong> How we collect, use, and protect merchant business information
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Service Fee Policy:</strong> Subscription fees, commission structure, and billing terms
+              </LegalListItem>
+              <LegalListItem>
+                <strong>API Terms:</strong> Terms governing API access, rate limits, and integration requirements
+              </LegalListItem>
+            </LegalList>
+            <LegalParagraph style={{ marginTop: '1rem' }}>
+              All merchant agreements are available in your account dashboard. By subscribing to our platform, you agree to 
+              these terms and conditions.
+            </LegalParagraph>
+          </LegalSection>
+
+          <LegalSection>
+            <LegalSectionTitle>Contact Our Team</LegalSectionTitle>
+            <LegalParagraph>
+              For platform demos, sales inquiries, or merchant support:
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               {process.env.REACT_APP_COMPANY_NAME}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
-              Customer Service Department
+              Merchant Services & Sales
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
               {process.env.REACT_APP_COMPANY_ADDRESS}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
-              Email: {process.env.REACT_APP_EMAIL_SUPPORT}
+              Sales Email: {process.env.REACT_APP_EMAIL_SUPPORT}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
-              Phone: {process.env.REACT_APP_PHONE_DISPLAY}
+              Sales Phone: {process.env.REACT_APP_PHONE_DISPLAY}
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               Business Hours: Monday - Friday, 9:00 AM - 6:00 PM EST

@@ -6,6 +6,7 @@ import FeaturesSection from './components/FeaturesSection';
 import StatsSection from './components/StatsSection';
 import CTASection from './components/CTASection';
 import FAQSection from './components/FAQSection';
+import WhyRecoverySection from './components/WhyRecoverySection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -34,8 +35,9 @@ const HomePage: React.FC = () => (
     <HeroSection />
     <FeaturesSection />
     <StatsSection />
-    <CTASection />
     <FAQSection />
+    <WhyRecoverySection />
+    <CTASection />
     <ContactSection />
     <Footer />
   </>

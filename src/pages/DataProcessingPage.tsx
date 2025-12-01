@@ -26,8 +26,8 @@ const DataProcessingPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>1. Definitions and Interpretation</LegalSectionTitle>
             <LegalParagraph>
-              This Data Processing Agreement ("DPA") forms part of the service agreement between you ("Data Controller") 
-              and {process.env.REACT_APP_COMPANY_NAME} ("Data Processor") for the provision of customer payment assistance services.
+              This Data Processing Agreement ("DPA") forms part of the Merchant Service Agreement between you ("Merchant," "Data Controller") 
+              and {process.env.REACT_APP_COMPANY_NAME} ("Platform," "Data Processor") for the provision of decline salvage platform services.
             </LegalParagraph>
             <LegalParagraph>
               For the purposes of this DPA:
@@ -35,20 +35,20 @@ const DataProcessingPage: React.FC = () => {
             <LegalList>
               <LegalListItem>
                 <strong>"Data Protection Laws"</strong> means all applicable laws relating to data protection and privacy, 
-                including GDPR, CCPA, and other regional regulations
+                including GDPR, CCPA, and other regional regulations governing merchant and customer data
               </LegalListItem>
               <LegalListItem>
-                <strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person 
-                processed under this agreement
+                <strong>"Personal Data"</strong> means information relating to your customers (end-users) whose failed transactions 
+                you transmit to our platform for recovery purposes
               </LegalListItem>
               <LegalListItem>
-                <strong>"Processing"</strong> has the meaning given in applicable Data Protection Laws
+                <strong>"Processing"</strong> has the meaning given in applicable Data Protection Laws and includes all decline salvage operations
               </LegalListItem>
               <LegalListItem>
-                <strong>"Data Subject"</strong> means the individual to whom Personal Data relates
+                <strong>"Data Subject"</strong> means your customers whose transaction and payment information is processed through our platform
               </LegalListItem>
               <LegalListItem>
-                <strong>"Sub-processor"</strong> means any third party engaged by the Data Processor to process Personal Data
+                <strong>"Sub-processor"</strong> means third-party service providers (email, SMS, payment gateways) engaged by us to process customer data
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -56,24 +56,23 @@ const DataProcessingPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>2. Scope and Purpose of Processing</LegalSectionTitle>
             <LegalParagraph>
-              The Data Processor shall process Personal Data only for the following purposes:
+              The Platform shall process your customers' Personal Data only for the following decline salvage purposes:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Providing customer payment assistance services as described in the service agreement</LegalListItem>
-              <LegalListItem>Analyzing transaction data to assist with payment completion</LegalListItem>
-              <LegalListItem>Communicating with customers regarding payment assistance</LegalListItem>
-              <LegalListItem>Processing payments and managing financial transactions</LegalListItem>
-              <LegalListItem>Providing customer support and technical assistance</LegalListItem>
-              <LegalListItem>Generating reports and analytics for the Data Controller</LegalListItem>
-              <LegalListItem>Complying with legal obligations and regulatory requirements</LegalListItem>
+              <LegalListItem>Processing failed transaction data transmitted via your API integration</LegalListItem>
+              <LegalListItem>Sending automated payment recovery communications (email, SMS) to your customers on your behalf</LegalListItem>
+              <LegalListItem>Hosting secure payment update pages where your customers can update their payment methods</LegalListItem>
+              <LegalListItem>Retrying failed transactions with updated payment information through your payment gateway</LegalListItem>
+              <LegalListItem>Providing analytics, reporting, and recovery metrics to your merchant dashboard</LegalListItem>
+              <LegalListItem>Generating customer support records when your customers contact us regarding payment recovery</LegalListItem>
+              <LegalListItem>Complying with payment processor requirements, PCI-DSS standards, and regulatory obligations</LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              The categories of Personal Data processed include: names, email addresses, phone numbers, billing addresses, 
-              payment information, transaction history, and communication records.
+              The categories of Personal Data processed include: customer names, email addresses, phone numbers, billing addresses, 
+              payment method tokens (never full card numbers), transaction amounts, order identifiers, and communication history.
             </LegalParagraph>
             <LegalParagraph>
-              The categories of Data Subjects include: customers, potential customers, and authorized representatives of 
-              the Data Controller.
+              The categories of Data Subjects include: your customers whose payments failed and were transmitted to our platform for recovery.
             </LegalParagraph>
           </LegalSection>
 

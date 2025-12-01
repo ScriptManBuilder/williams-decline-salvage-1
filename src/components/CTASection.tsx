@@ -14,7 +14,7 @@ import {
 } from '../styles/CTASection.styles';
 
 const CTASection: React.FC = () => {
-  const handleGetStarted = () => {
+  const handleRequestDemo = () => {
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -28,17 +28,8 @@ const CTASection: React.FC = () => {
           <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
         </svg>
       ),
-      title: 'Secure & Fast',
-      description: 'Quick and secure payment update process to complete your direct mail order'
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
-        </svg>
-      ),
-      title: 'Easy Process',
-      description: 'Simple step-by-step guidance to update payment information and complete your purchase'
+      title: '8–15% Recovery Rate',
+      description: 'On average, our clients recover 8–15% of previously failed charges, turning lost revenue into actual income.'
     },
     {
       icon: (
@@ -46,19 +37,37 @@ const CTASection: React.FC = () => {
           <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
         </svg>
       ),
-      title: 'Trusted & Safe',
-      description: 'Your payment information is protected with bank-grade security and encryption'
+      title: 'Lower Chargeback Risk',
+      description: 'Reduced involuntary churn and improved billing relationships result in fewer refund disputes and chargebacks.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+        </svg>
+      ),
+      title: 'Improved Payment Success',
+      description: 'Boost overall transaction success rates and reduce billing friction across your entire payment flow.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+        </svg>
+      ),
+      title: 'More Predictable Cash Flow',
+      description: 'Recover revenue you thought was lost. Improve forecasting and reduce the financial impact of payment failures.'
     }
   ];
 
   return (
     <CTAContainer id="how-it-works">
       <CTAContent>
-        <CTATitle>Need Help with Your Direct Mail Payment?</CTATitle>
+        <CTATitle>Results & Proof Points</CTATitle>
         <CTADescription>
-          We serve only direct mail clients. If your payment was declined, we are here to help you complete your purchase securely and easily.
+          See how our decline-salvage system improves billing performance and recovers lost revenue for merchants.
         </CTADescription>
-        <CTASectionButton onClick={handleGetStarted}>Get Started Now →</CTASectionButton>
+        <CTASectionButton onClick={handleRequestDemo}>Request a Demo →</CTASectionButton>
         
         <CTAFeaturesGrid>
           {features.map((feature, index) => (

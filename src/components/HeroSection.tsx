@@ -14,12 +14,14 @@ import {
 const HeroSection: React.FC = () => {
   const appSubdomain = process.env.REACT_APP_APP_SUBDOMAIN || 'app.williamscollection.com';
 
-  const handleLaunchApp = () => {
-    // Temporarily disabled - demo site under construction
-    // window.open(`https://${appSubdomain}`, '_blank');
+  const handleRequestDemo = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
-  const handleScheduleCall = () => {
+  const handleSpeakToSales = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -29,21 +31,22 @@ const HeroSection: React.FC = () => {
   return (
     <HeroContainer>
       <HeroContent>
-        <Tagline>We serve only direct mail clients</Tagline>
         <HeroTitle>
-          Payment Declined?
-          <Highlight>We Can Help.</Highlight>
+          Recover Revenue Lost to Declined Payments
         </HeroTitle>
         <HeroDescription>
-          If your direct mail payment was declined, don't worry. We specialize in helping customers complete their 
-          direct mail purchases after payment issues. Update your payment information securely and complete your 
-          order with confidence.
+          Our decline-salvage engine helps merchants recover <strong style={{color: '#3388dd', fontSize: '1.2em'}}>up to 15%</strong> of failed transactions—<strong>automatically</strong>, <strong>securely</strong>, and <strong>without interrupting</strong> your checkout flow.
         </HeroDescription>
+        <Tagline>We specialize in serving merchants who acquire customers through direct mail campaigns. Our decline recovery technology is optimized for businesses using catalog, mail-order, and postal-based acquisition flows.</Tagline>
         <CTAButtonGroup>
-          <CTAButtonSecondary onClick={handleScheduleCall}>
-            Contact Us for Help
+          <CTAButtonPrimary onClick={handleRequestDemo}>
+            Request a Demo
+          </CTAButtonPrimary>
+          <CTAButtonSecondary onClick={handleSpeakToSales}>
+            Speak to Sales
           </CTAButtonSecondary>
         </CTAButtonGroup>
+        <Highlight>Trusted by merchants in e-commerce, retail, logistics, call center, and subscription businesses.</Highlight>
       </HeroContent>
     </HeroContainer>
   );

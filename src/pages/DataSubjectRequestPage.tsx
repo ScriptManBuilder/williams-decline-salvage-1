@@ -24,26 +24,26 @@ const DataSubjectRequestPage: React.FC = () => {
 
         <LegalContent>
           <LegalSection>
-            <LegalSectionTitle>Your Privacy Rights</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Privacy Rights Request</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} respects your privacy rights under applicable data protection laws. 
-              This form allows you to exercise your rights regarding your personal information.
+              {process.env.REACT_APP_COMPANY_NAME} respects your business privacy rights under applicable data protection laws. 
+              This form allows merchant businesses to exercise their rights regarding business information and customer data processed through our platform.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Available Rights</LegalSectionTitle>
+            <LegalSectionTitle>Available Merchant Rights</LegalSectionTitle>
             <LegalParagraph>
-              Depending on your location and applicable laws, you may have the following rights:
+              As a merchant client, you may have the following rights depending on applicable laws:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Right to Access:</strong> Request a copy of the personal information we hold about you</LegalListItem>
-              <LegalListItem><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data</LegalListItem>
-              <LegalListItem><strong>Right to Erasure:</strong> Request deletion of your personal information</LegalListItem>
-              <LegalListItem><strong>Right to Restriction:</strong> Request limitation on how we process your data</LegalListItem>
-              <LegalListItem><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</LegalListItem>
-              <LegalListItem><strong>Right to Object:</strong> Object to processing of your personal information</LegalListItem>
-              <LegalListItem><strong>Right to Opt-Out:</strong> Opt out of the sale or sharing of your personal information</LegalListItem>
+              <LegalListItem><strong>Right to Access:</strong> Request a copy of your business information and customer data we process on your behalf</LegalListItem>
+              <LegalListItem><strong>Right to Rectification:</strong> Request correction of inaccurate merchant account information or integration settings</LegalListItem>
+              <LegalListItem><strong>Right to Erasure:</strong> Request deletion of your merchant account and associated business data</LegalListItem>
+              <LegalListItem><strong>Right to Restriction:</strong> Request limitation on how we process your business or customer data</LegalListItem>
+              <LegalListItem><strong>Right to Data Portability:</strong> Export your transaction data, analytics, and customer records in structured formats</LegalListItem>
+              <LegalListItem><strong>Right to Object:</strong> Object to processing of your business information for marketing or non-essential purposes</LegalListItem>
+              <LegalListItem><strong>Right to Opt-Out:</strong> Opt out of non-essential platform communications while maintaining service notifications</LegalListItem>
             </LegalList>
           </LegalSection>
 

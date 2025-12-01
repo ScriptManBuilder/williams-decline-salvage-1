@@ -54,30 +54,30 @@ const ContactSection: React.FC = () => {
 
   const features = [
     {
-      title: 'Quick Assistance',
-      description: 'Our support team is ready to help you update your payment information and complete your direct mail purchase.'
+      title: 'PCI-Compliant Infrastructure',
+      description: 'Enterprise-grade security for payment data handling. Our platform meets PCI DSS Level 1 certification requirements.'
     },
     {
-      title: 'Friendly Support',
-      description: 'Have questions about your order or payment? We\'re here to help make the process smooth and easy.'
+      title: 'GDPR & CCPA Compliant',
+      description: 'Full compliance with data protection regulations. Transparent data handling and merchant-controlled retention policies.'
     },
     {
-      title: 'Secure & Safe',
-      description: 'Your payment information is protected with the highest security standards. Your data is safe with us.'
+      title: 'Secure API Integration',
+      description: 'OAuth 2.0 authentication, encrypted data transmission, and real-time monitoring for all merchant integrations.'
     }
   ];
 
   return (
     <ContactContainer id="contact">
       <ContactContent>
-        <ContactTitle>Need Help with Your Payment?</ContactTitle>
+        <ContactTitle>Ready to Recover Lost Revenue?</ContactTitle>
         <ContactDescription>
-          We serve only direct mail clients. Get in touch if you have questions about your direct mail order or need assistance updating your payment information.
+          See how our decline-salvage system can improve your billing performance. Request a demo or speak with our sales team to learn more.
         </ContactDescription>
         
         <ContactGrid>
           <ContactForm onSubmit={handleSubmit}>
-            <h3>Contact Us</h3>
+            <h3>Request a Demo</h3>
             {showSuccess && (
               <div style={{ 
                 padding: '1rem', 
@@ -87,16 +87,27 @@ const ContactSection: React.FC = () => {
                 marginBottom: '1rem',
                 textAlign: 'center'
               }}>
-                ✓ Message sent successfully! We'll get back to you soon.
+                ✓ Demo request received! Our sales team will contact you within 24 hours.
               </div>
             )}
-            <p>Fill out the form below to get in touch with us.</p>
+            <p>Fill out the form below and our team will reach out to schedule a personalized demo.</p>
             
             {/* Hidden field with your Web3Forms access key */}
             <input type="hidden" name="access_key" value={process.env.REACT_APP_WEB3FORMS_KEY} />
             
             <FormGroup>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Company Name</FormLabel>
+              <FormInput 
+                type="text" 
+                name="company"
+                placeholder="Your company name" 
+                required 
+                disabled={isSubmitting}
+              />
+            </FormGroup>
+            
+            <FormGroup>
+              <FormLabel>Contact Name</FormLabel>
               <FormInput 
                 type="text" 
                 name="name"
@@ -107,29 +118,28 @@ const ContactSection: React.FC = () => {
             </FormGroup>
             
             <FormGroup>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Business Email</FormLabel>
               <FormInput 
                 type="email" 
                 name="email"
-                placeholder="your.email@company.com" 
+                placeholder="you@yourcompany.com" 
                 required 
                 disabled={isSubmitting}
               />
             </FormGroup>
             
             <FormGroup>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Message (Optional)</FormLabel>
               <FormTextarea 
                 name="message"
-                placeholder="Tell us about your order or how we can help you..." 
+                placeholder="Tell us about your business, payment volume, current decline rates, or specific questions..." 
                 rows={5}
-                required 
                 disabled={isSubmitting}
               />
             </FormGroup>
             
             <SubmitButton type="submit" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? 'Submitting...' : 'Request Demo'}
             </SubmitButton>
           </ContactForm>
           
@@ -142,16 +152,16 @@ const ContactSection: React.FC = () => {
             ))}
             
             <InfoCard style={{ marginTop: '2rem' }}>
-              <InfoTitle>Contact Information</InfoTitle>
+              <InfoTitle>Contact Sales</InfoTitle>
               <InfoDescription>
-                <strong>Email Support:</strong>
+                <strong>Sales Email:</strong>
                 <br />
                 <span style={{ fontWeight: 600, userSelect: 'none', pointerEvents: 'none' }}>
                   {process.env.REACT_APP_EMAIL_SUPPORT}
                 </span>
               </InfoDescription>
               <InfoDescription style={{ marginTop: '1rem' }}>
-                <strong>Customer Service:</strong>
+                <strong>Phone:</strong>
                 <br />
                 <InfoLink href={`tel:${process.env.REACT_APP_PHONE_NUMBER?.replace(/\s+/g, '')}`}>
                   {process.env.REACT_APP_PHONE_DISPLAY}

@@ -19,88 +19,95 @@ const RefundPage: React.FC = () => {
       <Header />
       <LegalPageContainer>
         <LegalHeroSection>
-          <LegalTitle>Refund Policy</LegalTitle>
+          <LegalTitle>Merchant Service Fee Refund Policy</LegalTitle>
         </LegalHeroSection>
 
         <LegalContent>
           <LegalSection>
-            <LegalSectionTitle>Our Commitment to Customer Satisfaction</LegalSectionTitle>
+            <LegalSectionTitle>Our Commitment to Merchant Satisfaction</LegalSectionTitle>
             <LegalParagraph>
-              At {process.env.REACT_APP_COMPANY_NAME}, we are committed to providing excellent customer service. 
-              This Refund Policy outlines the circumstances under which refunds may be issued for purchases made through our direct mail service and the process for requesting a refund.
+              At {process.env.REACT_APP_COMPANY_NAME}, we are committed to delivering value through our decline salvage platform. 
+              This Refund Policy outlines the circumstances under which refunds may be issued for subscription fees, commission charges, 
+              and other platform service fees.
             </LegalParagraph>
             <LegalParagraph>
-              By using our services, you acknowledge that you have read and understood this Refund Policy and agree to be bound by its terms.
+              By subscribing to our merchant services, you acknowledge that you have read and understood this Refund Policy and agree to be bound by its terms.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>General Refund Policy</LegalSectionTitle>
+            <LegalSectionTitle>General Merchant Refund Policy</LegalSectionTitle>
             <LegalParagraph>
-              For purchases made through our direct mail service, the following refund terms apply:
+              For subscription fees and platform charges, the following refund terms apply:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Order Cancellation:</strong> You may cancel your order within 24 hours of purchase for a full refund 
-                if the product has not yet shipped.
+                <strong>Subscription Cancellation:</strong> You may cancel your subscription at any time, effective at the end of your current billing period. 
+                No refunds are provided for partial months or unused subscription time.
               </LegalListItem>
               <LegalListItem>
-                <strong>Product Returns:</strong> Physical products may be returned within 30 days of delivery for a full refund, 
-                provided they are in original, unopened condition.
+                <strong>Setup Fees:</strong> One-time setup and onboarding fees are non-refundable once integration has commenced.
               </LegalListItem>
               <LegalListItem>
-                <strong>Digital Products:</strong> Digital products and services are generally non-refundable once accessed 
-                or downloaded, unless required by law.
+                <strong>Commission Charges:</strong> Success-based commission fees on recovered transactions are final and non-refundable.
               </LegalListItem>
               <LegalListItem>
-                <strong>Damaged or Defective Items:</strong> If you receive a damaged or defective product, contact us within 
-                7 days for a replacement or full refund.
+                <strong>Trial Period:</strong> If you cancel within your 14-day trial period (if applicable), you will not be charged, 
+                and no refund is necessary.
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Downgrade Requests:</strong> Plan downgrades take effect at the next billing cycle; no prorated refunds for the current period.
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Eligible Refund Scenarios</LegalSectionTitle>
+            <LegalSectionTitle>Eligible Refund Scenarios for Merchants</LegalSectionTitle>
             <LegalParagraph>
-              Refunds may be considered in the following circumstances:
+              Refunds may be considered in the following merchant service circumstances:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Non-Delivery:</strong> If your order was not delivered within the stated timeframe and cannot be located, 
-                you may be eligible for a full refund.
+                <strong>Platform Downtime:</strong> If our platform experiences extended downtime (&gt;24 hours) due to our fault, 
+                you may be eligible for a prorated credit for the affected period.
               </LegalListItem>
               <LegalListItem>
-                <strong>Billing Errors:</strong> If you were charged incorrectly due to a system error, we will refund the 
-                incorrect amount immediately upon verification.
+                <strong>Billing Errors:</strong> If you were charged incorrectly due to a system error or duplicate billing, 
+                we will refund the incorrect amount immediately upon verification.
               </LegalListItem>
               <LegalListItem>
-                <strong>Duplicate Charges:</strong> If you were accidentally charged twice for the same order, we will 
-                refund the duplicate charge.
+                <strong>Duplicate Charges:</strong> If you were accidentally charged twice for the same subscription period or service fee, 
+                we will refund the duplicate charge within 5 business days.
               </LegalListItem>
               <LegalListItem>
-                <strong>Unauthorized Charges:</strong> If you can demonstrate that charges were made without your authorization, 
-                we will investigate and issue a refund if warranted.
+                <strong>Unauthorized Charges:</strong> If you can demonstrate that charges were made without your authorization or 
+                after subscription cancellation, we will investigate and issue a refund if warranted.
               </LegalListItem>
               <LegalListItem>
-                <strong>Product Not as Described:</strong> If the product you received significantly differs from the 
-                description in your direct mail offer, you may be eligible for a refund or replacement.
+                <strong>Service Not as Described:</strong> If our platform fails to deliver core features or functionality as described 
+                in our service agreement, you may be eligible for a refund within 30 days of integration.
+              </LegalListItem>
+              <LegalListItem>
+                <strong>Overage Billing Errors:</strong> If you were incorrectly charged for transaction volume overages due to our metering error, 
+                we will refund the incorrect overage charges.
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Non-Refundable Items and Services</LegalSectionTitle>
+            <LegalSectionTitle>Non-Refundable Service Fees</LegalSectionTitle>
             <LegalParagraph>
-              The following are not eligible for refunds under any circumstances:
+              The following merchant service fees are not eligible for refunds under any circumstances:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Digital products that have been accessed, downloaded, or used</LegalListItem>
-              <LegalListItem>Products returned after 30 days from delivery date</LegalListItem>
-              <LegalListItem>Products that are not in original, unopened condition (unless defective)</LegalListItem>
-              <LegalListItem>Custom or personalized products made specifically for you</LegalListItem>
-              <LegalListItem>Products marked as final sale or clearance items</LegalListItem>
-              <LegalListItem>Gift cards or promotional codes once redeemed</LegalListItem>
-              <LegalListItem>Shipping and handling fees (unless order was not delivered)</LegalListItem>
+              <LegalListItem>Success-based commission fees on transactions we successfully recovered for you</LegalListItem>
+              <LegalListItem>API access fees and integration setup costs once your account has been activated</LegalListItem>
+              <LegalListItem>Subscription fees for completed billing periods (partial month refunds are not provided)</LegalListItem>
+              <LegalListItem>Custom development, white-label services, or enterprise features that have been delivered</LegalListItem>
+              <LegalListItem>Transaction processing fees charged by third-party payment processors (Stripe, PayPal, etc.)</LegalListItem>
+              <LegalListItem>Overage charges for transaction volume that exceeded your plan limits (unless due to our billing error)</LegalListItem>
+              <LegalListItem>Premium support packages, training sessions, or consulting services that have been rendered</LegalListItem>
+              <LegalListItem>Historical data exports, API usage beyond plan limits, or other à la carte services</LegalListItem>
             </LegalList>
           </LegalSection>
 
@@ -175,16 +182,16 @@ const RefundPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Order Cancellation Policy</LegalSectionTitle>
+            <LegalSectionTitle>Subscription Cancellation Policy</LegalSectionTitle>
             <LegalParagraph>
-              You may cancel your order in the following circumstances:
+              Merchants may cancel their platform subscription under the following terms:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Orders can be cancelled within 24 hours of purchase for a full refund</LegalListItem>
-              <LegalListItem>Once an order has shipped, it cannot be cancelled but may be returned per our return policy</LegalListItem>
-              <LegalListItem>To cancel an order, contact customer support immediately</LegalListItem>
-              <LegalListItem>Refunds for cancelled orders are processed within 5-10 business days</LegalListItem>
-              <LegalListItem>You will receive a cancellation confirmation email once processed</LegalListItem>
+              <LegalListItem>Subscriptions can be cancelled at any time from your merchant dashboard or by contacting support</LegalListItem>
+              <LegalListItem>Cancellation takes effect at the end of your current billing period (no mid-cycle cancellations)</LegalListItem>
+              <LegalListItem>To cancel your subscription, submit a request through your account settings or email merchant support</LegalListItem>
+              <LegalListItem>Final invoice and commission charges will be processed within 5-10 business days after cancellation</LegalListItem>
+              <LegalListItem>You will receive a cancellation confirmation email with your final billing summary</LegalListItem>
             </LegalList>
           </LegalSection>
 

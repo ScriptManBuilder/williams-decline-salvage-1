@@ -71,15 +71,15 @@ const Header: React.FC = () => {
           {process.env.REACT_APP_COMPANY_NAME?.split(' Inc.')[0] || 'The Williams Collection'}
         </Logo>
         <NavLinks>
-          <NavLink href="#features" onClick={(e) => handleNavClick(e, '#features')}>Features</NavLink>
-          <NavLink href="#stats" onClick={(e) => handleNavClick(e, '#stats')}>Industry Stats</NavLink>
-          <NavLink href="#how-it-works" onClick={(e) => handleNavClick(e, '#how-it-works')}>How It Works</NavLink>
-          <NavLink href="#faq" onClick={(e) => handleNavClick(e, '#faq')}>FAQ</NavLink>
-          <NavLink href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact</NavLink>
+          <NavLink href="#features" onClick={(e) => handleNavClick(e, '#features')}>What We Do</NavLink>
+          <NavLink href="#stats" onClick={(e) => handleNavClick(e, '#stats')}>How It Works</NavLink>
+          <NavLink href="#how-it-works" onClick={(e) => handleNavClick(e, '#how-it-works')}>Results</NavLink>
+          <NavLink href="#faq" onClick={(e) => handleNavClick(e, '#faq')}>Who We Serve</NavLink>
+          <NavLink href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact Sales</NavLink>
         </NavLinks>
         <CTAButtons>
-          <Button onClick={handleCustomerCareClick}>Customer Care</Button>
-          <Button $primary onClick={handleButtonClick}>Get Started</Button>
+          <Button onClick={handleCustomerCareClick}>Merchant Support</Button>
+          <Button $primary onClick={handleButtonClick}>Request Demo</Button>
         </CTAButtons>
       </Nav>
     </HeaderContainer>

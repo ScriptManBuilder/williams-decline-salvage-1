@@ -26,93 +26,97 @@ const PrivacyPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Introduction</LegalSectionTitle>
             <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME} ("we," "us," or "our") is committed to protecting your privacy. 
-              This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use 
-              our customer payment assistance services and visit our website.
+              {process.env.REACT_APP_COMPANY_NAME} ("we," "us," or "our") is committed to protecting your business data privacy. 
+              This Privacy Policy explains how we collect, use, disclose, and safeguard information from merchants when you use 
+              our decline salvage platform, API services, and merchant dashboard.
             </LegalParagraph>
             <LegalParagraph>
-              By using our services, you consent to the data practices described in this policy. If you do not agree 
-              with this Privacy Policy, please do not use our services.
+              By using our platform services, you consent to the data practices described in this policy. If you do not agree 
+              with this Privacy Policy, please do not integrate with or use our merchant services.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Information We Collect</LegalSectionTitle>
+            <LegalSectionTitle>Information We Collect from Merchants</LegalSectionTitle>
             <LegalParagraph>
-              We collect several types of information to provide and improve our services:
+              We collect several types of business information to provide and improve our decline salvage platform:
             </LegalParagraph>
             
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
-              Personal Information
+              Merchant Business Information
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Contact Information:</strong> Name, email address, phone number, shipping address</LegalListItem>
-              <LegalListItem><strong>Payment Information:</strong> Payment card details, billing address</LegalListItem>
-              <LegalListItem><strong>Order Information:</strong> Products ordered, order amounts, order dates</LegalListItem>
+              <LegalListItem><strong>Company Details:</strong> Legal business name, DBA, tax identification (EIN), incorporation documents</LegalListItem>
+              <LegalListItem><strong>Contact Information:</strong> Business email, phone, primary contact name, billing address</LegalListItem>
+              <LegalListItem><strong>Payment Details:</strong> Bank account information for payouts, billing card for subscription fees</LegalListItem>
+              <LegalListItem><strong>Integration Details:</strong> API keys, webhook URLs, payment processor credentials, technical contact information</LegalListItem>
             </LegalList>
 
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
-              Order and Transaction Data
+              Platform Usage and Transaction Data
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Transaction Data:</strong> Payment status, transaction amounts, payment methods used</LegalListItem>
-              <LegalListItem><strong>Order Details:</strong> Direct mail offer details, products ordered, delivery information</LegalListItem>
-              <LegalListItem><strong>Communication Records:</strong> Email correspondence, support tickets, payment update notifications</LegalListItem>
+              <LegalListItem><strong>API Activity:</strong> API calls, request/response logs, rate limit usage, integration performance metrics</LegalListItem>
+              <LegalListItem><strong>Transaction Data:</strong> Failed transaction records from your customers (provided via API), recovery attempts, success rates</LegalListItem>
+              <LegalListItem><strong>Dashboard Activity:</strong> Login events, feature usage, report generation, settings configurations</LegalListItem>
+              <LegalListItem><strong>Communication Records:</strong> Support tickets, merchant correspondence, technical assistance requests</LegalListItem>
             </LegalList>
 
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
-              Technical Information
+              Technical and Security Information
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Device Information:</strong> IP address, browser type, operating system, device identifiers</LegalListItem>
-              <LegalListItem><strong>Usage Data:</strong> Pages visited, features used, time spent, click patterns</LegalListItem>
-              <LegalListItem><strong>Cookies and Tracking:</strong> Session cookies, analytics cookies, preference cookies</LegalListItem>
+              <LegalListItem><strong>Authentication Data:</strong> Login credentials, API keys, OAuth tokens, session information</LegalListItem>
+              <LegalListItem><strong>Device Information:</strong> IP addresses of merchant systems, server locations, integration environments</LegalListItem>
+              <LegalListItem><strong>Analytics Data:</strong> Platform performance metrics, feature adoption, integration health, error logs</LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>How We Use Your Information</LegalSectionTitle>
+            <LegalSectionTitle>How We Use Merchant Information</LegalSectionTitle>
             <LegalParagraph>
-              We use the collected information for various purposes:
+              We use merchant business information for the following platform purposes:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Order Fulfillment:</strong> Process your payments, complete your orders, send order confirmations</LegalListItem>
-              <LegalListItem><strong>Customer Support:</strong> Assist with payment issues, answer questions, provide order support</LegalListItem>
-              <LegalListItem><strong>Communication:</strong> Send order updates, payment confirmations, delivery notifications</LegalListItem>
-              <LegalListItem><strong>Service Improvement:</strong> Analyze service quality, improve customer experience</LegalListItem>
-              <LegalListItem><strong>Compliance:</strong> Comply with legal obligations, prevent fraud, protect customer security</LegalListItem>
-              <LegalListItem><strong>Marketing:</strong> Send promotional materials about products and services (with your consent)</LegalListItem>
+              <LegalListItem><strong>Platform Operations:</strong> Process your subscription, manage merchant accounts, authenticate API access</LegalListItem>
+              <LegalListItem><strong>Decline Salvage Services:</strong> Execute transaction recovery workflows, deliver customer outreach, track recovery rates</LegalListItem>
+              <LegalListItem><strong>Merchant Support:</strong> Provide technical assistance, troubleshoot integrations, answer platform questions</LegalListItem>
+              <LegalListItem><strong>Business Communications:</strong> Send invoices, platform updates, feature announcements, API deprecation notices</LegalListItem>
+              <LegalListItem><strong>Platform Analytics:</strong> Analyze merchant success metrics, improve recovery algorithms, optimize platform performance</LegalListItem>
+              <LegalListItem><strong>Compliance and Security:</strong> Prevent fraud, comply with payment processor requirements, maintain PCI-DSS compliance</LegalListItem>
+              <LegalListItem><strong>Business Development:</strong> Send relevant product updates, integration tips, and platform enhancement opportunities (with consent)</LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>How We Share Your Information</LegalSectionTitle>
+            <LegalSectionTitle>How We Share Merchant Information</LegalSectionTitle>
             <LegalParagraph>
-              We may share your information with third parties in the following circumstances:
+              We may share merchant business information with third parties in the following circumstances:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Service Providers:</strong> Payment processors, shipping companies, email service providers, 
-                customer support platforms who assist in fulfilling your orders
+                <strong>Service Providers:</strong> Cloud infrastructure (AWS, Azure), email delivery (SendGrid), analytics platforms (Segment), 
+                and payment processors who assist in delivering platform services
               </LegalListItem>
               <LegalListItem>
-                <strong>Merchants:</strong> The original merchant or company whose products you ordered via direct mail
+                <strong>Payment Gateways:</strong> Your connected payment processors (Stripe, Braintree, etc.) receive transaction data 
+                necessary for decline salvage operations
               </LegalListItem>
               <LegalListItem>
-                <strong>Legal Requirements:</strong> Law enforcement, regulatory authorities, or courts when required 
-                by law or to protect our rights
+                <strong>Legal Requirements:</strong> Law enforcement, regulatory authorities, or courts when required by law, 
+                subpoena, or to protect platform integrity
               </LegalListItem>
               <LegalListItem>
-                <strong>Business Transfers:</strong> Potential buyers or investors in the event of a merger, acquisition, 
-                or sale of assets
+                <strong>Business Transfers:</strong> Potential acquirers, investors, or successors in the event of a merger, acquisition, 
+                or sale of assets (with confidentiality protections)
               </LegalListItem>
               <LegalListItem>
-                <strong>With Your Consent:</strong> Other third parties when you have given explicit consent to share 
-                your information
+                <strong>With Your Consent:</strong> Other third parties when you have given explicit consent through integration 
+                approvals or API authorizations
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              We do not sell your personal information to third parties for their marketing purposes.
+              We do not sell merchant business information to third parties. We do not share your customer data with other merchants or competitors.
             </LegalParagraph>
           </LegalSection>
 
@@ -137,34 +141,35 @@ const PrivacyPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Data Retention</LegalSectionTitle>
             <LegalParagraph>
-              We retain your information for as long as necessary to fulfill the purposes outlined in this Privacy Policy:
+              We retain merchant business information for as long as necessary to fulfill platform services and comply with legal obligations:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Order Records:</strong> Order and payment data retained for 7 years for legal and compliance purposes</LegalListItem>
-              <LegalListItem><strong>Transaction Records:</strong> Financial records retained for 10 years as required by law</LegalListItem>
-              <LegalListItem><strong>Support Records:</strong> Customer support communications retained for 3 years</LegalListItem>
-              <LegalListItem><strong>Marketing Data:</strong> Deleted within 3 years of last interaction or upon opt-out request</LegalListItem>
-              <LegalListItem><strong>Anonymized Data:</strong> May be retained indefinitely for analytics and research</LegalListItem>
+              <LegalListItem><strong>Account Records:</strong> Merchant account data retained for duration of active subscription plus 7 years for compliance</LegalListItem>
+              <LegalListItem><strong>Transaction Records:</strong> Failed transaction and recovery data retained for 10 years as required by financial regulations</LegalListItem>
+              <LegalListItem><strong>API Logs:</strong> Request/response logs retained for 90 days for troubleshooting; summary metrics retained indefinitely</LegalListItem>
+              <LegalListItem><strong>Support Records:</strong> Merchant support communications retained for 5 years for quality assurance and dispute resolution</LegalListItem>
+              <LegalListItem><strong>Billing Records:</strong> Invoices, payment history, and subscription records retained for 10 years for tax and accounting purposes</LegalListItem>
+              <LegalListItem><strong>Anonymized Data:</strong> Aggregated platform metrics and anonymized usage data may be retained indefinitely for research and analytics</LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Your Privacy Rights</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Privacy Rights</LegalSectionTitle>
             <LegalParagraph>
-              Depending on your location, you may have the following rights regarding your personal information:
+              As a merchant client, you have the following rights regarding your business information:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem><strong>Access:</strong> Request a copy of the personal information we hold about you</LegalListItem>
-              <LegalListItem><strong>Correction:</strong> Request correction of inaccurate or incomplete information</LegalListItem>
-              <LegalListItem><strong>Deletion:</strong> Request deletion of your personal information, subject to legal requirements</LegalListItem>
-              <LegalListItem><strong>Portability:</strong> Receive your data in a structured, machine-readable format</LegalListItem>
-              <LegalListItem><strong>Restriction:</strong> Request limitation on how we process your information</LegalListItem>
-              <LegalListItem><strong>Objection:</strong> Object to processing of your information for certain purposes</LegalListItem>
-              <LegalListItem><strong>Opt-Out:</strong> Unsubscribe from marketing communications at any time</LegalListItem>
-              <LegalListItem><strong>Withdraw Consent:</strong> Withdraw previously given consent for data processing</LegalListItem>
+              <LegalListItem><strong>Access:</strong> Request a copy of the business and transaction data we hold about your merchant account</LegalListItem>
+              <LegalListItem><strong>Correction:</strong> Request correction of inaccurate merchant account information or integration settings</LegalListItem>
+              <LegalListItem><strong>Deletion:</strong> Request deletion of your merchant account and associated data (subject to legal retention requirements)</LegalListItem>
+              <LegalListItem><strong>Portability:</strong> Export your transaction data, recovery metrics, and customer records in machine-readable formats (CSV, JSON)</LegalListItem>
+              <LegalListItem><strong>Restriction:</strong> Request limitation on processing of your merchant data for specific purposes</LegalListItem>
+              <LegalListItem><strong>Objection:</strong> Object to processing of your business information for marketing or analytics purposes</LegalListItem>
+              <LegalListItem><strong>Opt-Out:</strong> Unsubscribe from marketing communications while maintaining essential platform notifications</LegalListItem>
+              <LegalListItem><strong>API Control:</strong> Revoke API keys, disable integrations, or withdraw platform access at any time</LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              To exercise these rights, please contact us using the information provided at the end of this policy.
+              To exercise these rights, please contact your account manager or email us using the information provided at the end of this policy.
             </LegalParagraph>
           </LegalSection>
 

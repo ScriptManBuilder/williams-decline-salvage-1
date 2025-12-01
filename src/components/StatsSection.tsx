@@ -14,27 +14,27 @@ import {
 const StatsSection: React.FC = () => {
   const stats = [
     {
-      title: 'Common Occurrence',
-      description: 'Payment declines happen to everyone - expired cards, insufficient funds, or technical issues',
-      value: '15%',
+      title: 'Step 1',
+      description: 'Connect your gateway or merchant account. We integrate with all major payment processors via API or secure gateway links.',
+      value: '01',
       background: 'linear-gradient(135deg, #0066cc 0%, #3388dd 100%)'
     },
     {
-      title: 'Easy to Resolve',
-      description: 'Most payment issues can be quickly resolved by updating your payment information',
-      value: '90%',
+      title: 'Step 2',
+      description: 'Declined transactions are sent to our engine. Your system automatically forwards declined payments to us for reprocessing.',
+      value: '02',
       background: 'linear-gradient(135deg, #3388dd 0%, #0066cc 100%)'
     },
     {
-      title: 'Act Quickly',
-      description: 'Updating your payment information promptly ensures you receive your direct mail order on time',
-      value: '24hrs',
+      title: 'Step 3',
+      description: 'Our algorithm salvages a percentage of failed charges. Optimized retry sequences, alternative routing, and risk-aware logic recover up to 15% of declines.',
+      value: '03',
       background: 'linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)'
     },
     {
-      title: 'We Are Here to Help',
-      description: 'Our team successfully helps customers complete their direct mail purchases every day',
-      value: '24/7',
+      title: 'Step 4',
+      description: 'You receive recovered revenue. Recovered funds are returned to you, minus our performance-based fee.',
+      value: '04',
       background: 'linear-gradient(135deg, #00d4aa 0%, #00bfa5 100%)'
     }
   ];
@@ -42,9 +42,9 @@ const StatsSection: React.FC = () => {
   return (
     <StatsContainer id="stats">
       <StatsContent>
-        <StatsSectionTitle>Why Payment Declines Happen</StatsSectionTitle>
+        <StatsSectionTitle>How It Works</StatsSectionTitle>
         <StatsSectionDescription>
-          We serve only direct mail clients. Payment declines are common and usually easy to fix. Here's what you should know.
+          Simple integration. Automated recovery. Performance-based pricing. Start recovering lost revenue in 4 easy steps.
         </StatsSectionDescription>
         <StatsGrid>
           {stats.map((stat, index) => (

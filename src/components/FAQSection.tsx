@@ -16,28 +16,28 @@ const FAQSection: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Why was my direct mail payment declined?',
-      answer: 'Payment declines happen for many reasons: expired card, insufficient funds, incorrect billing address, or temporary bank issues. Don\'t worry - it\'s common and easy to fix. Simply update your payment information and we\'ll process your order.'
+      question: 'E-commerce Brands',
+      answer: 'Direct-to-consumer (DTC) merchants, online marketplaces, and subscription product companies. Our decline-salvage engine integrates seamlessly with Shopify, WooCommerce, Magento, and custom e-commerce platforms to recover failed checkout transactions.'
     },
     {
-      question: 'How do I update my payment information?',
-      answer: 'Simply click the secure link in the email we sent you, or contact us directly. You\'ll be guided through a secure process to update your payment details. The entire process takes less than 2 minutes.'
+      question: 'Retail Companies',
+      answer: 'Merchants processing card-not-present transactions in retail environments—online ordering, in-store digital payments, hybrid POS systems, and omnichannel billing flows. We support recovery across all retail payment channels.'
     },
     {
-      question: 'Is it safe to update my payment information?',
-      answer: 'Absolutely. We use bank-grade encryption (PCI DSS Level 1 certified) to protect your payment information. We never store your complete card details. Your security is our top priority.'
+      question: 'Logistics & Delivery Services',
+      answer: 'Transportation, shipping, and logistics companies with recurring billing or pre-authorized payment flows. Reduce payment failures for subscription deliveries, pre-paid services, and account-based billing.'
     },
     {
-      question: 'Is this a legitimate email/website?',
-      answer: 'Yes! We work directly with the company you placed your direct mail order with. You can verify by checking the email sender, calling the company directly, or contacting us at the phone number listed on this website.'
+      question: 'Call-Center Merchants',
+      answer: 'Businesses processing high-volume phone orders and MOTO (mail-order/telephone-order) transactions. Our system is optimized for agent-assisted checkouts and call-center billing environments with elevated decline rates.'
     },
     {
-      question: 'What if I don\'t want to complete my purchase?',
-      answer: 'That\'s completely fine! You\'re under no obligation. If you\'ve changed your mind or don\'t want to proceed with your direct mail order, simply ignore our messages or contact us to cancel.'
+      question: 'Direct Mail & Catalog Businesses',
+      answer: 'Merchants acquiring customers through direct mail campaigns, catalog orders, and postal-based marketing. We specialize in recovering failed payments from mail-order transactions and postal acquisition flows.'
     },
     {
-      question: 'How can I contact customer support?',
-      answer: 'You can reach us by phone, email, or through the contact form on this website. Our support team is here to help answer any questions about your direct mail order or payment.'
+      question: 'Subscription & Membership Services',
+      answer: 'SaaS platforms, membership sites, recurring billing services, and any business model relying on automatic renewals. Reduce involuntary churn by recovering declined subscription payments before customers cancel.'
     }
   ];
 
@@ -48,9 +48,9 @@ const FAQSection: React.FC = () => {
   return (
     <FAQContainer id="faq">
       <FAQContent>
-        <FAQTitle>Frequently Asked Questions</FAQTitle>
+        <FAQTitle>Who We Serve</FAQTitle>
         <FAQDescription>
-          Everything you need to know about our customer payment assistance
+          We support businesses across multiple industries and payment environments
         </FAQDescription>
         <FAQList>
           {faqs.map((faq, index) => (

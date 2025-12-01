@@ -233,3 +233,44 @@ export const FeatureDescription = styled.p`
   line-height: 1.7;
   font-size: 0.95rem;
 `;
+
+export const CTAButton = styled.button`
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
+  margin: 3rem auto 0;
+  display: block;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 102, 204, 0.5);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 350px;
+  }
+`;

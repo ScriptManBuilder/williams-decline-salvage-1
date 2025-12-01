@@ -71,107 +71,91 @@ export const HeroContent = styled.div`
 `;
 
 export const Tagline = styled.p`
-  display: inline-block;
-  color: #3388dd;
-  background: rgba(0, 102, 204, 0.15);
-  padding: 0.5rem 1.25rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.75rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  border: 1px solid rgba(0, 102, 204, 0.3);
-  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 768px) {
-    font-size: 0.75rem;
-    padding: 0.4rem 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 425px) {
-    font-size: 0.7rem;
-    padding: 0.35rem 0.875rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: 3.75rem;
-  line-height: 1.15;
-  margin-bottom: 1.75rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 800;
   letter-spacing: -0.03em;
 
   @media (max-width: 1024px) {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
 
   @media (max-width: 425px) {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     margin-bottom: 1.25rem;
   }
 
   @media (max-width: 375px) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.3;
   }
 
   @media (max-width: 320px) {
-    font-size: 1.35rem;
+    font-size: 1.05rem;
     margin-bottom: 1rem;
   }
 `;
 
-export const Highlight = styled.span`
-  background: linear-gradient(135deg, #3388dd 0%, #0066cc 50%, #0052a3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: block;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #0066cc, transparent);
-    border-radius: 2px;
-  }
+export const Highlight = styled.p`
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-top: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 
   @media (max-width: 768px) {
-    &::after {
-      width: 80px;
-      height: 3px;
-    }
+    font-size: 0.85rem;
+    margin-top: 2rem;
   }
 
   @media (max-width: 425px) {
-    &::after {
-      width: 60px;
-      height: 2px;
-    }
+    font-size: 0.8rem;
+    margin-top: 1.75rem;
   }
 `;
 
 export const HeroDescription = styled.p`
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 3rem;
-  line-height: 1.7;
-  max-width: 750px;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
+
+  strong {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+  }
 
   @media (max-width: 1024px) {
     font-size: 1.1rem;
@@ -180,24 +164,84 @@ export const HeroDescription = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     max-width: 500px;
   }
 
   @media (max-width: 425px) {
     font-size: 0.95rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
 
   @media (max-width: 375px) {
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.875rem;
   }
 
   @media (max-width: 320px) {
     font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+`;
+
+export const FeatureBadges = styled.div`
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 425px) {
+    gap: 0.5rem;
     margin-bottom: 1.25rem;
+  }
+`;
+
+export const FeatureBadge = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(51, 136, 221, 0.15);
+  color: #3388dd;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid rgba(51, 136, 221, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: rgba(51, 136, 221, 0.25);
+    border-color: rgba(51, 136, 221, 0.5);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.875rem;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    gap: 0.375rem;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
   }
 `;
 

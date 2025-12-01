@@ -19,276 +19,277 @@ const DigitalProductsPage: React.FC = () => {
       <Header />
       <LegalPageContainer>
         <LegalHeroSection>
-          <LegalTitle>Digital Products Policy</LegalTitle>
+          <LegalTitle>SaaS Platform & API Access Terms</LegalTitle>
         </LegalHeroSection>
 
         <LegalContent>
           <LegalSection>
             <LegalSectionTitle>Introduction</LegalSectionTitle>
             <LegalParagraph>
-              We serve only direct mail clients. This Digital Products Policy governs your purchase of digital products and services 
-              through our direct mail offers. By purchasing or accessing digital products, you agree to the terms outlined in this policy.
+              This SaaS Platform & API Access Terms document governs your business subscription to and use of {process.env.REACT_APP_COMPANY_NAME}'s 
+              decline salvage platform, API services, and related software-as-a-service offerings. By integrating with our platform or accessing our API, 
+              you agree to the terms outlined in this policy.
             </LegalParagraph>
             <LegalParagraph>
-              Digital products may include software downloads, digital content, online courses, ebooks, digital subscriptions, 
-              streaming services, and any other downloadable or online-accessible products offered through direct mail.
+              Our platform services include: web-based merchant dashboard, RESTful API endpoints for transaction recovery, webhook notifications, 
+              hosted payment update pages, analytics and reporting tools, and integration documentation.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Types of Digital Products</LegalSectionTitle>
+            <LegalSectionTitle>Platform Services Included</LegalSectionTitle>
             <LegalParagraph>
-              Digital products purchased through direct mail may include:
+              Your subscription to our decline salvage platform includes access to the following SaaS services and digital tools:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Software & Applications:</strong> Desktop software, mobile apps, and web-based applications
+                <strong>RESTful API Access:</strong> Full access to our API endpoints for transaction submission, status updates, and webhook configurations
               </LegalListItem>
               <LegalListItem>
-                <strong>Digital Content:</strong> Ebooks, audiobooks, music, videos, and other downloadable media
+                <strong>Merchant Dashboard:</strong> Web-based control panel for viewing analytics, managing settings, and accessing reports
               </LegalListItem>
               <LegalListItem>
-                <strong>Online Courses:</strong> Educational content, training programs, and instructional materials
+                <strong>Hosted Payment Pages:</strong> PCI-compliant, brandable payment update pages for your customers
               </LegalListItem>
               <LegalListItem>
-                <strong>Subscriptions:</strong> Access to streaming services, digital publications, or membership content
+                <strong>Webhook Notifications:</strong> Real-time event notifications for successful recoveries, failed attempts, and system updates
               </LegalListItem>
               <LegalListItem>
-                <strong>Digital Services:</strong> Cloud storage, online tools, and web-based services
+                <strong>Analytics & Reporting:</strong> Downloadable reports, visual dashboards, and export tools (CSV, JSON)
               </LegalListItem>
               <LegalListItem>
-                <strong>Game Content:</strong> Video games, in-game content, and gaming subscriptions
+                <strong>Developer Documentation:</strong> Technical guides, API references, SDK libraries, and integration examples
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Purchase and Payment</LegalSectionTitle>
+            <LegalSectionTitle>Subscription and Billing</LegalSectionTitle>
             <LegalParagraph>
-              When purchasing digital products through direct mail:
+              Platform access is provided on a subscription basis:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Pricing:</strong> All prices are as stated in your direct mail offer and include applicable taxes unless noted
+                <strong>Pricing Tiers:</strong> Plans vary by transaction volume, features, and support level as detailed in your merchant agreement
               </LegalListItem>
               <LegalListItem>
-                <strong>Payment Methods:</strong> We accept major credit cards, debit cards, PayPal, and other payment methods as indicated
+                <strong>Payment Methods:</strong> Subscriptions are billed via credit card, ACH transfer, or wire transfer for enterprise clients
               </LegalListItem>
               <LegalListItem>
-                <strong>One-Time Purchases:</strong> Most digital products are one-time purchases with lifetime access
+                <strong>Billing Frequency:</strong> Subscription fees are billed monthly or annually based on your selected plan
               </LegalListItem>
               <LegalListItem>
-                <strong>Subscriptions:</strong> Some products may include recurring subscriptions billed monthly or annually
+                <strong>Success-Based Fees:</strong> Commission charges apply to recovered transactions as specified in your pricing tier
               </LegalListItem>
               <LegalListItem>
-                <strong>Auto-Renewal:</strong> Subscription products automatically renew unless you cancel before renewal
+                <strong>Auto-Renewal:</strong> Subscriptions automatically renew unless you cancel before the end of your billing period
               </LegalListItem>
               <LegalListItem>
-                <strong>Confirmation:</strong> You will receive an email confirmation with purchase details and access instructions
+                <strong>Invoicing:</strong> Monthly invoices are delivered via email with detailed breakdowns of subscription and commission fees
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Delivery and Access</LegalSectionTitle>
+            <LegalSectionTitle>Platform Onboarding and Access</LegalSectionTitle>
             <LegalParagraph>
-              Digital products are delivered electronically:
+              Access to the platform is provisioned as follows:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Immediate Delivery:</strong> Most products are accessible immediately after successful payment
+                <strong>Immediate Provisioning:</strong> Merchant accounts are activated immediately upon subscription confirmation
               </LegalListItem>
               <LegalListItem>
-                <strong>Email Delivery:</strong> Download links, access codes, and login credentials are sent to your email
+                <strong>API Credentials:</strong> API keys, secret tokens, and webhook URLs are delivered via your merchant dashboard
               </LegalListItem>
               <LegalListItem>
-                <strong>Download Links:</strong> Software and digital content can be downloaded from the links provided
+                <strong>Dashboard Access:</strong> Login credentials for your merchant control panel are sent to your business email
               </LegalListItem>
               <LegalListItem>
-                <strong>Online Access:</strong> Streaming content and online courses are accessed through secure login portals
+                <strong>Documentation Portal:</strong> Full technical documentation, integration guides, and SDK downloads available upon login
               </LegalListItem>
               <LegalListItem>
-                <strong>License Keys:</strong> Software products may include license keys or activation codes
+                <strong>Onboarding Support:</strong> Dedicated integration assistance available during your first 30 days
               </LegalListItem>
               <LegalListItem>
-                <strong>Processing Time:</strong> Most digital products are delivered within minutes; some may take up to 24 hours
+                <strong>Processing Time:</strong> Most merchants complete integration within 1-2 weeks with our technical support
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>License and Usage Rights</LegalSectionTitle>
+            <LegalSectionTitle>License Grant and Usage Restrictions</LegalSectionTitle>
             <LegalParagraph>
-              Your license to use digital products is subject to the following terms:
+              Your subscription grants you a limited, non-exclusive license to use the platform:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Personal Use License:</strong> Digital products are licensed for your personal, non-commercial use only
+                <strong>Business Use License:</strong> Platform services are licensed for your business operations and merchant activities only
               </LegalListItem>
               <LegalListItem>
-                <strong>Non-Transferable:</strong> Licenses cannot be shared, transferred, or resold to others
+                <strong>Non-Transferable:</strong> Your merchant account and API access cannot be shared, transferred, or resold to other businesses
               </LegalListItem>
               <LegalListItem>
-                <strong>Device Limits:</strong> Some products may have limits on the number of devices where they can be used
+                <strong>Usage Limits:</strong> API rate limits, transaction volume caps, and feature access restrictions apply per your plan tier
               </LegalListItem>
               <LegalListItem>
-                <strong>Prohibited Uses:</strong> You may not copy, distribute, reverse engineer, or create derivative works
+                <strong>Prohibited Uses:</strong> You may not reverse engineer the platform, attempt to extract proprietary algorithms, or circumvent security measures
               </LegalListItem>
               <LegalListItem>
-                <strong>Copyright:</strong> All digital products are protected by copyright and remain the property of their creators
+                <strong>Intellectual Property:</strong> All platform code, algorithms, and documentation remain the property of {process.env.REACT_APP_COMPANY_NAME}
               </LegalListItem>
               <LegalListItem>
-                <strong>Revocation:</strong> Licenses may be revoked if you violate these terms or applicable laws
+                <strong>Revocation:</strong> License may be revoked immediately if you violate these terms, engage in fraud, or misuse the platform
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Returns and Refunds for Digital Products</LegalSectionTitle>
+            <LegalSectionTitle>Service Cancellation and Refunds</LegalSectionTitle>
             <LegalParagraph>
-              Due to the nature of digital products, special refund terms apply:
+              Subscription cancellation and refund terms:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>No Returns:</strong> Digital products cannot be returned once accessed, downloaded, or license key is provided
+                <strong>No Refunds on Usage:</strong> Subscription fees for the current billing period are non-refundable once the period has started
               </LegalListItem>
               <LegalListItem>
-                <strong>Satisfaction Guarantee:</strong> Request a full refund within 7 days if you are not satisfied with the product
+                <strong>Trial Period:</strong> Cancel within your 14-day trial (if applicable) for a full refund before first billing
               </LegalListItem>
               <LegalListItem>
-                <strong>Technical Issues:</strong> Full refund available if the product does not work as described and cannot be fixed
+                <strong>Platform Issues:</strong> Refunds or credits available if platform experiences extended downtime due to our fault
               </LegalListItem>
               <LegalListItem>
-                <strong>Subscriptions:</strong> Cancel subscriptions anytime; no refunds for the current billing period
+                <strong>Cancellation Process:</strong> Cancel your subscription anytime from your dashboard; effective at end of billing cycle
               </LegalListItem>
               <LegalListItem>
-                <strong>Refund Process:</strong> Email {process.env.REACT_APP_EMAIL_SUPPORT} with your order number and reason for refund
+                <strong>Refund Requests:</strong> Submit refund requests to {process.env.REACT_APP_EMAIL_SUPPORT} with your merchant account details
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              For complete refund terms, please refer to our Refund Policy.
+              For complete refund terms, please refer to our Merchant Service Fee Refund Policy.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Product Updates and Modifications</LegalSectionTitle>
+            <LegalSectionTitle>Platform Updates and API Versioning</LegalSectionTitle>
             <LegalParagraph>
-              Digital products may receive updates and improvements:
+              Our platform receives regular updates and improvements:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Free Updates:</strong> Software and digital content updates are typically provided free of charge
+                <strong>Free Updates:</strong> Platform enhancements, feature additions, and security patches are included in your subscription
               </LegalListItem>
               <LegalListItem>
-                <strong>Automatic Updates:</strong> Online services and subscriptions update automatically
+                <strong>Automatic Updates:</strong> Dashboard and backend systems update automatically without merchant action required
               </LegalListItem>
               <LegalListItem>
-                <strong>Download Updates:</strong> Software updates may require downloading new versions
+                <strong>API Versioning:</strong> API endpoints use semantic versioning (v1, v2); we maintain backward compatibility for 12 months
               </LegalListItem>
               <LegalListItem>
-                <strong>Compatibility:</strong> Updates may require newer operating systems or hardware
+                <strong>Deprecation Notice:</strong> Advance notice of 90 days minimum provided before deprecating any API endpoint or feature
               </LegalListItem>
               <LegalListItem>
-                <strong>No Guarantee:</strong> We are not obligated to provide updates or maintain products indefinitely
+                <strong>Migration Support:</strong> Technical assistance provided for migrating to new API versions during deprecation period
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Product Availability</LegalSectionTitle>
+            <LegalSectionTitle>Service Availability and Uptime</LegalSectionTitle>
             <LegalParagraph>
-              We work to ensure digital products remain accessible:
+              We maintain high availability for merchant platform services:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Download Access:</strong> Purchased products remain available for download from your account
+                <strong>API Availability:</strong> We target 99.9% uptime for API endpoints and webhook delivery systems
               </LegalListItem>
               <LegalListItem>
-                <strong>Online Services:</strong> Subscription services are available 24/7 with minimal scheduled downtime
+                <strong>Dashboard Access:</strong> Merchant dashboard available 24/7 with scheduled maintenance windows announced in advance
               </LegalListItem>
               <LegalListItem>
-                <strong>Maintenance:</strong> Occasional maintenance may temporarily limit access
+                <strong>Maintenance Windows:</strong> Routine maintenance typically scheduled during low-traffic periods (2-4 AM EST)
               </LegalListItem>
               <LegalListItem>
-                <strong>Backup Copies:</strong> We recommend downloading and backing up purchased digital products
+                <strong>Status Monitoring:</strong> Real-time platform status page available at status.{process.env.REACT_APP_APP_SUBDOMAIN}
               </LegalListItem>
               <LegalListItem>
-                <strong>Service Changes:</strong> Online services may be modified or discontinued with reasonable notice
+                <strong>Service Modifications:</strong> Platform features may be enhanced or deprecated with reasonable advance notice to merchants
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Customer Support</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Technical Support</LegalSectionTitle>
             <LegalParagraph>
-              Support for digital products includes:
+              Technical support for platform integration and usage:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Product Help:</strong> Instructions and FAQs for using your digital products
+                <strong>Integration Assistance:</strong> Help with API setup, webhook configuration, and initial platform integration
               </LegalListItem>
               <LegalListItem>
-                <strong>Email Support:</strong> Contact us at {process.env.REACT_APP_EMAIL_SUPPORT} for assistance
+                <strong>Email Support:</strong> Contact merchant support at {process.env.REACT_APP_EMAIL_SUPPORT} for technical assistance
               </LegalListItem>
               <LegalListItem>
-                <strong>Response Times:</strong> We respond to support requests within 24-48 hours
+                <strong>Response Times:</strong> Standard support responds within 24 hours; priority support within 4 hours for enterprise plans
               </LegalListItem>
               <LegalListItem>
-                <strong>Technical Issues:</strong> Help with download problems, installation, and access issues
+                <strong>Technical Issues:</strong> Assistance with API errors, authentication problems, webhook failures, and platform bugs
               </LegalListItem>
               <LegalListItem>
-                <strong>Product Questions:</strong> Answers about features, usage, and compatibility
+                <strong>Platform Questions:</strong> Guidance on features, best practices, recovery optimization, and analytics interpretation
               </LegalListItem>
               <LegalListItem>
-                <strong>Scope:</strong> Support covers product functionality, not personal device troubleshooting
+                <strong>Support Scope:</strong> Technical support covers platform functionality, not merchant-side infrastructure or code debugging
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Data Ownership and Export</LegalSectionTitle>
+            <LegalSectionTitle>Merchant Data Ownership and Export</LegalSectionTitle>
             <LegalParagraph>
-              Regarding data processed through our digital products:
+              Your business data processed through our platform:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Your Data:</strong> You retain ownership of all data you input, upload, or generate using our products
+                <strong>Your Data:</strong> You retain full ownership of all merchant data, transaction records, and customer information processed via our platform
               </LegalListItem>
               <LegalListItem>
-                <strong>Data Export:</strong> You can export your data at any time in standard formats (CSV, JSON, XML)
+                <strong>Data Export:</strong> Export your complete data set at any time in standard formats (CSV, JSON, XML) via dashboard or API
               </LegalListItem>
               <LegalListItem>
-                <strong>Data Portability:</strong> We provide tools to help you migrate to other platforms if you choose
+                <strong>Data Portability:</strong> We provide export tools and migration assistance to help you move to other platforms if needed
               </LegalListItem>
               <LegalListItem>
-                <strong>Post-Cancellation:</strong> After account cancellation, data is retained for 30 days, then permanently deleted
+                <strong>Post-Cancellation:</strong> After subscription cancellation, merchant data is retained for 90 days, then securely deleted per data retention policy
               </LegalListItem>
               <LegalListItem>
-                <strong>Anonymized Data:</strong> We may retain anonymized, aggregated data for analytics and product improvement
+                <strong>Anonymized Analytics:</strong> We may retain anonymized, aggregated metrics for platform improvement (no personally identifiable data)
               </LegalListItem>
             </LegalList>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Termination and Suspension</LegalSectionTitle>
+            <LegalSectionTitle>Account Termination and Suspension</LegalSectionTitle>
             <LegalParagraph>
-              Your access to digital products may be terminated or suspended:
+              Merchant account access may be terminated or suspended under the following conditions:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Non-Payment:</strong> Accounts with overdue payments may be suspended after grace period
+                <strong>Non-Payment:</strong> Merchant accounts with overdue invoices may be suspended after 15-day grace period
               </LegalListItem>
               <LegalListItem>
-                <strong>Terms Violation:</strong> Violation of our Terms of Service may result in immediate termination
+                <strong>Terms Violation:</strong> Violation of Merchant Service Agreement or Acceptable Use Policy may result in immediate termination
               </LegalListItem>
               <LegalListItem>
-                <strong>Fraudulent Activity:</strong> Suspected fraud or abuse will result in account suspension pending investigation
+                <strong>Fraudulent Activity:</strong> Suspected fraud, abuse, or unauthorized usage will result in immediate account suspension pending investigation
               </LegalListItem>
               <LegalListItem>
-                <strong>Voluntary Cancellation:</strong> You may cancel your subscription at any time from your account settings
+                <strong>Voluntary Cancellation:</strong> Merchants may cancel subscriptions at any time from account settings or by contacting support
               </LegalListItem>
               <LegalListItem>
-                <strong>Effect of Termination:</strong> Upon termination, your license to use our products ends immediately
+                <strong>Effect of Termination:</strong> Upon termination, API access is revoked, platform usage ceases, and final invoicing occurs
               </LegalListItem>
             </LegalList>
           </LegalSection>
@@ -296,24 +297,24 @@ const DigitalProductsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Warranty Disclaimer</LegalSectionTitle>
             <LegalParagraph>
-              Our digital products are provided "as is" without warranties of any kind:
+              The platform is provided "as is" without warranties of any kind:
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                We do not warrant that our products will meet your specific requirements or expectations
+                We do not warrant that our platform will meet your specific business requirements or recovery rate expectations
               </LegalListItem>
               <LegalListItem>
-                We do not guarantee that our products will be uninterrupted, timely, secure, or error-free
+                We do not guarantee that platform services will be uninterrupted, error-free, or completely secure at all times
               </LegalListItem>
               <LegalListItem>
-                We do not warrant that results obtained from using our products will be accurate or reliable
+                We do not warrant that recovery results will be consistent across all merchants or transaction types
               </LegalListItem>
               <LegalListItem>
-                Any material downloaded or accessed through our products is done at your own risk
+                API integrations and third-party services are used at your own risk; we do not guarantee third-party reliability
               </LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              Some jurisdictions do not allow disclaimer of warranties, so some of the above may not apply to you.
+              Some jurisdictions do not allow disclaimer of implied warranties for business services, so some limitations may not apply to your business.
             </LegalParagraph>
           </LegalSection>
 
@@ -323,24 +324,27 @@ const DigitalProductsPage: React.FC = () => {
               To the maximum extent permitted by law, {process.env.REACT_APP_COMPANY_NAME} shall not be liable for:
             </LegalParagraph>
             <LegalList>
-              <LegalListItem>Any indirect, incidental, special, consequential, or exemplary damages</LegalListItem>
-              <LegalListItem>Loss of profits, revenue, data, or business opportunities</LegalListItem>
-              <LegalListItem>Service interruptions or data loss</LegalListItem>
-              <LegalListItem>Errors or bugs in the software</LegalListItem>
+              <LegalListItem>Any indirect, incidental, special, consequential, or exemplary damages arising from platform usage</LegalListItem>
+              <LegalListItem>Loss of profits, revenue, business opportunities, or anticipated savings due to platform issues</LegalListItem>
+              <LegalListItem>Service interruptions, data loss, or failed transaction recovery attempts</LegalListItem>
+              <LegalListItem>API errors, webhook failures, or integration bugs affecting your business operations</LegalListItem>
             </LegalList>
             <LegalParagraph style={{ marginTop: '1rem' }}>
-              Our total liability for any claim related to digital products shall not exceed the amount you paid for the 
-              product in the 12 months preceding the claim.
+              Our total liability for any claim related to platform services shall not exceed the total subscription fees paid by your business 
+              in the 12 months preceding the claim.
             </LegalParagraph>
           </LegalSection>
 
           <LegalSection>
-            <LegalSectionTitle>Contact Us</LegalSectionTitle>
+            <LegalSectionTitle>Contact Merchant Support</LegalSectionTitle>
             <LegalParagraph>
-              For questions about our digital products or this policy, contact:
+              For questions about platform services, API integration, or this policy, contact:
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               {process.env.REACT_APP_COMPANY_NAME}
+            </LegalParagraph>
+            <LegalParagraph style={{ fontWeight: 600 }}>
+              Merchant Support Team
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600 }}>
               {process.env.REACT_APP_COMPANY_ADDRESS}
