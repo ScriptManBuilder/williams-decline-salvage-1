@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
         <HeroDescription>
           Our decline-salvage engine helps merchants recover <strong style={{color: '#3388dd', fontSize: '1.2em'}}>up to 15%</strong> of failed transactions—<strong>automatically</strong>, <strong>securely</strong>, and <strong>without interrupting</strong> your checkout flow.
         </HeroDescription>
-        <Tagline>We specialize in serving merchants who acquire customers through direct mail campaigns. Our decline recovery technology is optimized for businesses using catalog, mail-order, and postal-based acquisition flows.</Tagline>
+        <Tagline>We specialize in serving merchants who acquire customers through <strong style={{color: '#3388dd'}}>direct mail campaigns</strong>. Our decline recovery technology is optimized for businesses using catalog, mail-order, and postal-based acquisition flows.</Tagline>
         <CTAButtonGroup>
           <CTAButtonPrimary onClick={handleRequestDemo}>
             Request a Demo
