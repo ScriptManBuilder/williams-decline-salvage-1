@@ -37,20 +37,28 @@ const SupportPage: React.FC = () => {
 
   const faqs = [
     {
-      question: 'How does decline salvage work for direct mail campaigns?',
-      answer: 'Our decline salvage platform specializes in recovering failed payments from direct mail and catalog orders. When a transaction declines, our system automatically initiates intelligent retry sequences optimized for mail-order transactions. We use alternative routing, timing optimization, and risk-aware logic to recover up to 15% of declined payments. The entire process is automated and works seamlessly with your existing payment infrastructure.'
+      question: 'Why am I seeing a charge on my bank statement?',
+      answer: 'If you see an unfamiliar charge on your statement, it may be from a recent purchase through a catalog, mail order, or phone order. The charge might appear under our payment processing name rather than the merchant\'s name. Check your recent mail for catalogs or promotional offers you may have responded to. If you still don\'t recognize the charge, please contact us immediately with the transaction details and we\'ll help identify it.'
     },
     {
-      question: 'What makes your solution different for direct mail merchants?',
-      answer: 'Unlike generic payment recovery tools, we specifically serve direct mail businesses—catalog companies, mail-order retailers, and postal campaign marketers. Our algorithms understand the unique challenges of mail-acquired customers: delayed order fulfillment, phone orders, and customer demographics typical of direct mail responders. We optimize retry timing and communication specifically for this acquisition channel.'
+      question: 'How do I request a refund?',
+      answer: 'To request a refund, please contact us with your transaction details including the charge amount, date, and any order information you have. Our team will work with the merchant on your behalf to process your refund request. Most refunds are processed within 5-10 business days, though it may take additional time for your bank to post the credit to your account. We\'ll keep you informed throughout the process.'
     },
     {
-      question: 'How do I integrate with your platform?',
-      answer: 'Integration is straightforward and typically takes 1-2 weeks. After signing up, you receive API credentials and access to our documentation. Your payment gateway forwards declined transactions to our engine via secure API. We support all major processors used by direct mail merchants. Our technical team provides hands-on onboarding support to ensure smooth integration.'
+      question: 'I didn\'t authorize this charge. What should I do?',
+      answer: 'If you believe a charge is unauthorized, contact us immediately at the phone number listed above. We take unauthorized transactions very seriously and will investigate right away. Please have your bank statement ready with the charge details. In the meantime, you may also want to contact your bank to dispute the charge. We\'ll work quickly to resolve the issue and ensure no further charges occur.'
     },
     {
-      question: 'What is the best way to reach merchant support?',
-      answer: 'We\'re here to help! You can reach our merchant support team by phone during business hours (Monday-Friday, 9 AM - 6 PM EST), via email anytime, or through our contact form. For technical integration questions, we offer dedicated API support. For urgent issues affecting your revenue recovery, call us directly and we\'ll prioritize your request.'
+      question: 'How do I cancel a subscription or prevent future charges?',
+      answer: 'If you have an active subscription or recurring order and wish to cancel, please contact us as soon as possible. Provide us with your account details, email address, or phone number associated with the order. We\'ll immediately request cancellation with the merchant and confirm once it\'s processed. Cancellations typically take effect within 24-48 hours, preventing any future charges.'
+    },
+    {
+      question: 'My product hasn\'t arrived. Can you help?',
+      answer: 'If you haven\'t received your order, we can help track it down. Contact us with your order details and approximate purchase date. We\'ll reach out to the merchant to check the shipping status and estimated delivery date. If the product is significantly delayed or lost in transit, we can help facilitate a refund or replacement shipment.'
+    },
+    {
+      question: 'I was charged twice for the same order. How do I fix this?',
+      answer: 'Duplicate charges occasionally happen due to system errors or payment processing issues. Please contact us with both transaction details from your bank statement. We\'ll investigate immediately and work with the merchant to refund the duplicate charge. Typically, duplicate charge refunds are processed within 3-5 business days once verified.'
     }
   ];
 
@@ -65,44 +73,8 @@ const SupportPage: React.FC = () => {
           <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
         </svg>
       ),
-      title: 'High decline rates on catalog orders',
-      description: 'Experiencing excessive payment failures on direct mail campaigns? We can analyze your decline patterns and implement recovery strategies to salvage lost revenue.'
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-        </svg>
-      ),
-      title: 'Mail-order payment processing issues',
-      description: 'Struggling with failed transactions from postal campaigns? We help optimize payment routing and retry logic specifically for mail-order business models.'
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
-        </svg>
-      ),
-      title: 'Revenue recovery setup',
-      description: 'Need help configuring automated decline salvage for your direct mail campaigns? We guide you through integration and workflow optimization to maximize recovered transactions.'
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
-        </svg>
-      ),
-      title: 'Gateway integration questions',
-      description: 'Questions about connecting your payment gateway to our decline salvage platform? We support all major processors and offer dedicated onboarding assistance for direct mail merchants.'
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-        </svg>
-      ),
-      title: 'Campaign performance analytics',
-      description: 'Want to understand recovery metrics for your direct mail campaigns? We provide detailed dashboards showing salvaged revenue, success rates, and ROI by campaign.'
+      title: 'I don\'t recognize this charge',
+      description: 'Unrecognized charges can be confusing and frustrating. We can help you identify the transaction and resolve your concern quickly.'
     },
     {
       icon: (
@@ -110,8 +82,44 @@ const SupportPage: React.FC = () => {
           <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
         </svg>
       ),
-      title: 'Billing and commission structure',
-      description: 'Questions about our performance-based pricing? We explain our commission model, monthly fees, and how you only pay when we successfully recover failed transactions.'
+      title: 'I want a refund',
+      description: 'If you\'re unsatisfied with a product or service and want a refund, we can help you contact the merchant and request your money back.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+        </svg>
+      ),
+      title: 'I was charged twice',
+      description: 'If you\'ve been charged twice for the same product, we can help you identify the duplicate charge and get it refunded promptly.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+        </svg>
+      ),
+      title: 'I want to cancel my order',
+      description: 'If you want to cancel your order before it ships, we can help you contact the merchant and request a cancellation and full refund.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+        </svg>
+      ),
+      title: 'Cancel my subscription',
+      description: 'We can help you cancel your subscription and prevent future charges from the merchant, ensuring a smooth and hassle-free experience.'
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+      ),
+      title: 'Product didn\'t arrive',
+      description: 'If you haven\'t received the product you ordered, we can help you track the delivery and resolve the issue with the merchant.'
     }
   ];
 
@@ -120,7 +128,10 @@ const SupportPage: React.FC = () => {
   };
 
   const handleContactClick = () => {
-    window.location.href = '/#contact';
+    const contactSection = document.getElementById('contact-form');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -134,8 +145,8 @@ const SupportPage: React.FC = () => {
             </HeroImageWrapper>
             
             <HeroContent>
-              <HeroTitle>Merchant Support for Direct Mail Businesses</HeroTitle>
-              <HeroDescription>Need help with declined payments or revenue recovery? We're here to assist with your direct mail transaction challenges.</HeroDescription>
+              <HeroTitle>Customer Care</HeroTitle>
+              <HeroDescription>Don't recognize a charge on your bank statement? We're here to help resolve your concerns.</HeroDescription>
             
               <ContactInfo>
                 <PhoneIcon>
@@ -154,7 +165,7 @@ const SupportPage: React.FC = () => {
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
                   </svg>
-                  Get Help
+                  Get Help Now
                 </ActionButton>
               </ActionButtons>
             </HeroContent>
@@ -162,7 +173,7 @@ const SupportPage: React.FC = () => {
         </SupportHero>
         
         <HelpSection>
-          <HelpTitle>How Can We Help You Today?</HelpTitle>
+          <HelpTitle>How can we help you today?</HelpTitle>
           <HelpGrid>
             {helpTopics.map((topic, index) => (
               <HelpCard key={index} onClick={handleContactClick} style={{ cursor: 'pointer' }}>
@@ -174,9 +185,9 @@ const SupportPage: React.FC = () => {
           </HelpGrid>
         </HelpSection>
 
-        <FAQSection>
+        <FAQSection id="contact-form">
           <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
-          <FAQSectionDescription>Quick answers to common merchant questions about decline salvage for direct mail</FAQSectionDescription>
+          <FAQSectionDescription>Quick answers to common customer questions</FAQSectionDescription>
           <FAQList>
             {faqs.map((faq, index) => (
               <FAQItem key={index}>
@@ -193,7 +204,7 @@ const SupportPage: React.FC = () => {
                     {faq.answer}
                     <div style={{ marginTop: '1rem' }}>
                       <ActionButton 
-                        onClick={handleContactClick} 
+                        onClick={handleEmailClick} 
                         style={{ 
                           fontSize: '0.9rem', 
                           padding: '0.6rem 1.25rem',
