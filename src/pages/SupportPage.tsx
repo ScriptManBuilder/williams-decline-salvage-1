@@ -128,10 +128,7 @@ const SupportPage: React.FC = () => {
   };
 
   const handleContactClick = () => {
-    const contactSection = document.getElementById('contact-form');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = '/#contact';
   };
 
   return (
@@ -204,7 +201,7 @@ const SupportPage: React.FC = () => {
                     {faq.answer}
                     <div style={{ marginTop: '1rem' }}>
                       <ActionButton 
-                        onClick={handleEmailClick} 
+                        onClick={handleContactClick} 
                         style={{ 
                           fontSize: '0.9rem', 
                           padding: '0.6rem 1.25rem',
