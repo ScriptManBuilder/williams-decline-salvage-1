@@ -31,6 +31,7 @@ import {
 } from '../styles/SupportPage.styles';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 
 const SupportPage: React.FC = () => {
   const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -128,7 +129,10 @@ const SupportPage: React.FC = () => {
   };
 
   const handleContactClick = () => {
-    window.location.href = '/#contact';
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -182,7 +186,7 @@ const SupportPage: React.FC = () => {
           </HelpGrid>
         </HelpSection>
 
-        <FAQSection id="contact-form">
+        <FAQSection>
           <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
           <FAQSectionDescription>Quick answers to common customer questions</FAQSectionDescription>
           <FAQList>
@@ -212,11 +216,14 @@ const SupportPage: React.FC = () => {
                       </ActionButton>
                     </div>
                   </FAQAnswer>
+
                 )}
               </FAQItem>
             ))}
           </FAQList>
         </FAQSection>
+
+        <ContactForm />
       </SupportContainer>
       <Footer />
     </>
