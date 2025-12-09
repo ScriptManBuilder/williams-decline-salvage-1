@@ -305,3 +305,33 @@ export const FooterBottom = styled.div`
     }
   }
 `;
+
+export const PaymentLogos = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  
+  @media (max-width: 640px) {
+    justify-content: flex-start;
+  }
+`;
+
+export const PaymentLogo = styled.div`
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  svg {
+    height: 32px;
+    width: auto;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  }
+  
+  @media (max-width: 425px) {
+    svg {
+      height: 28px;
+    }
+  }
+`;
