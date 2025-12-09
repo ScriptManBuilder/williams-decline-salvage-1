@@ -318,20 +318,24 @@ export const PaymentLogos = styled.div`
 `;
 
 export const PaymentLogo = styled.div`
-  background: transparent;
+  background: white;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
   
-  svg {
-    height: 32px;
-    width: auto;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   
   @media (max-width: 425px) {
-    svg {
-      height: 28px;
-    }
+    width: 44px;
+    height: 44px;
+    padding: 6px;
   }
 `;
