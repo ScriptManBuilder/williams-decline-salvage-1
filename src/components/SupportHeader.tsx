@@ -110,7 +110,7 @@ const SupportHeader: React.FC = () => {
   };
 
   const handleAboutClick = () => {
-    navigate('/company-info');
+    navigate('/about');
   };
 
   const handleSupportClick = () => {

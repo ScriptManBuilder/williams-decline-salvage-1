@@ -21,6 +21,7 @@ import RefundPage from './pages/RefundPage';
 import DataProcessingPage from './pages/DataProcessingPage';
 import CompanyInfoPage from './pages/CompanyInfoPage';
 import DigitalProductsPage from './pages/DigitalProductsPage';
+import AboutPage from './pages/AboutPage';
 import EndUserTermsPage from './pages/EndUserTermsPage';
 import MerchantDisclosurePage from './pages/MerchantDisclosurePage';
 
@@ -67,6 +68,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/support" element={<SupportPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/data-subject-request" element={<DataSubjectRequestPage />} />
         <Route path="/e-signature" element={<ESignaturePage />} />
         <Route path="/ccpa-notice" element={<CCPANoticePage />} />
