@@ -103,7 +103,7 @@ const MerchantDisclosurePage: React.FC = () => {
             </LegalParagraph>
             <LegalList>
               <LegalListItem>
-                <strong>Billing Descriptor:</strong> "WILLIAMS COLLECTION" or similar variation
+                <strong>Billing Descriptor:</strong> "WC" or similar variation
               </LegalListItem>
               <LegalListItem>
                 <strong>Contact Phone:</strong> {process.env.REACT_APP_PHONE_DISPLAY} will appear on your statement for questions
