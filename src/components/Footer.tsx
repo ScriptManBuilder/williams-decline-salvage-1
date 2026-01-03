@@ -51,11 +51,11 @@ const Footer: React.FC = () => {
               </svg>
               {brandName}
             </FooterLogo>
-            <CompanyInfo>
+            {/* <CompanyInfo>
               <p>{companyName}</p>
               <p>{companyAddress}</p>
               <p>Established March 2023</p>
-            </CompanyInfo>
+            </CompanyInfo> */}
             <PaymentLogos>
               <PaymentLogo>
                 <img src="/visa.svg" alt="Visa" />
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
         </FooterGrid>
 
         <FooterBottom>
-          <p>&copy; {new Date().getFullYear()} {companyName} All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
           <p>Enterprise decline-salvage platform for merchants. PCI-DSS compliant. GDPR & CCPA ready.</p>
         </FooterBottom>
       </FooterContent>

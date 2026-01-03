@@ -31,17 +31,18 @@ const MerchantDisclosurePage: React.FC = () => {
               SaaS industry standards, payment processor requirements, and business service regulations.
             </LegalParagraph>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1.5rem' }}>
-              Legal Business Name:
+              Legal Business Name: {process.env.REACT_APP_COMPANY_NAME}
             </LegalParagraph>
-            <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_NAME}
-            </LegalParagraph>
+{/*         
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               Business Address:
-            </LegalParagraph>
-            <LegalParagraph>
-              {process.env.REACT_APP_COMPANY_ADDRESS}
-            </LegalParagraph>
+            </LegalParagraph> */}
+            <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+              <img 
+                src="/company_adress.png" 
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
             <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               Contact Information:
             </LegalParagraph>
@@ -431,15 +432,18 @@ const MerchantDisclosurePage: React.FC = () => {
             <LegalParagraph>
               For any questions about this Merchant Disclosure or our payment processing services:
             </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
+            {/* <LegalParagraph style={{ fontWeight: 600, marginTop: '1rem' }}>
               {process.env.REACT_APP_COMPANY_NAME}
-            </LegalParagraph>
+            </LegalParagraph> */}
             <LegalParagraph style={{ fontWeight: 600 }}>
               Attention: Merchant Support Team
             </LegalParagraph>
-            <LegalParagraph style={{ fontWeight: 600 }}>
-              {process.env.REACT_APP_COMPANY_ADDRESS}
-            </LegalParagraph>
+            <div style={{ marginTop: '1rem', marginBottom: '1rem' }}>
+              <img 
+                src="/company_adress.png" 
+                style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
             <LegalParagraph style={{ fontWeight: 600 }}>
               Email: {process.env.REACT_APP_EMAIL_SUPPORT}
             </LegalParagraph>
